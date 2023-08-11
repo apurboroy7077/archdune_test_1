@@ -1,0 +1,177 @@
+.photography-head {
+  background-color: #ddd;
+}
+
+.photography-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.photography-title h2 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.photography-title p {
+  font-family: Aktiv-Grotesk-W04-Thin;
+  font-weight: 600;
+  /* color: #fff; */
+  text-align: center;
+}
+
+.photography-button-filter {
+  display: flex;
+  gap: 10px;
+  margin: 1%;
+}
+
+.photography-button-filter button {
+  display: flex;
+  width: auto;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 1px solid #cecdcd;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.photography-button-filter button:hover .gallery-img-306 {
+  transform: scale(1.1);
+}
+
+.photography-button-filter button:hover {
+  background-color: #cecdcd85;
+}
+
+.photography-button-filter button.active-btn {
+  background-color: #cecdcd85;
+}
+
+.photography-button-filter button span {
+  padding: 0 10px;
+}
+
+.gallery-img-306 {
+  width: 40px;
+  height: 100%;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  background-position: center center;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.filterabol-card {
+  margin: 0 1%;
+}
+
+.s-c-img-fil {
+  position: relative;
+}
+
+.image-title {
+  /* visibility: hidden;
+  display: none; */
+  position: absolute;
+  color: aliceblue;
+  /* background-color: #3633338e; */
+  background-size: cover;
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  margin-left: -300%;
+}
+
+/* .filterabol-card .card > div:hover */
+
+.filterabol-card .card > div:hover .image-title {
+  /* display: inline-block; */
+  visibility: visible;
+  margin-left: 0;
+}
+
+.filterabol-card .card {
+  margin-bottom: 10px;
+}
+
+.filterabol-card .card.hiden {
+  display: none;
+}
+
+.filterabol-card .card img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.filterabol-card .card > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.filterabol-card .card > div:hover img {
+  transform: scale(1.1);
+  /* opacity: 0.8; */
+  filter: blur(1px);
+}
+
+.filterabol-card .card > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.filterabol-card .card {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.filterabol-card .card .wide {
+  grid-column: span 1;
+}
+
+.filterabol-card .card .tall {
+  grid-row: span 2;
+}
+
+.filterabol-card .card .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 900px) {
+  .photography-title h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .photography-title h2 {
+    font-size: 2rem;
+  }
+}
