@@ -471,6 +471,39 @@
   line-height: 18px;
 }
 
+.singal-most-visited-updates-iamges .s-m-v-head {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.s-m-v-head .L-header-contant h5 {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.s-m-v-head .L-header-contant h5:hover {
+  color: #f86d1c;
+}
+
+.s-m-v-head .L-header-contant p {
+  color: #000;
+  font-weight: 300;
+}
+
+.s-m-v-head .R-header-vious {
+  color: #777;
+  bottom: 0px;
+  right: 0px;
+}
+
+.mae3254 {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 1600px) {
   .left-project-link {
     padding-left: 12px;
