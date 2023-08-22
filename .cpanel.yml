@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=repositories/archdune/frontend/
-    - /bin/cp * $DEPLOYPATH
