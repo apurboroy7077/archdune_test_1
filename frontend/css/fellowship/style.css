@@ -1,51 +1,589 @@
-.page-massage {
-    margin: 2%;
-    background: #eee;
-    padding: 1rem;
-    border-radius: 5px;
+.compusWraper {
+  background-color: #e3e2d6;
+  display: flex;
 }
 
-.page-massage-container {
-    padding: 3rem;
-    width: 100%;
-    text-align: center;
+.compusLeft,
+.compusRight {
+  flex: 1;
 }
 
-.page-massage-container h1 {
-    font-size: 2rem;
-    text-transform: capitalize;
+.compusLeft {
+  display: flex;
 }
 
-@media screen and (max-width: 1024px) {
-    .page-massage-container h1 {
-        font-size: 1.8rem;
-    }
+.compusLeftImage {
+  max-height: 400px;
+  float: 1;
+  border-right: 1px solid #6d6e71;
+}
+
+.compusLeftImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.compusLeftApply {
+  flex: 1;
+  position: relative;
+}
+
+.compusLeftApplyWrapper {
+  position: absolute;
+  /* right: 0; */
+  bottom: 100px;
+}
+
+.compusLeftApplyWrapper a {
+  text-decoration: none;
+}
+
+.compusLeftApplyWrapper .apply {
+  padding: 3px 0 3px 100px;
+  background: #6d6e71;
+  color: #ffce1f;
+  font-size: 18px;
+  font-weight: 400 !important;
+  font-family: "Poppins", Sans-serif;
+  transition: all 0.2s;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.compusLeftApplyWrapper .apply:active {
+  transform: scale(0.9);
+}
+
+.compusLeftApplyWrapper .desc {
+  padding-left: 100px;
+  font-size: 14px;
+  font-weight: 400 !important;
+  font-family: "Poppins", Sans-serif;
+}
+
+.compusRight {
+  width: 100%;
+  height: 100%d;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.compusRightWrapper {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding: 10px;
+}
+
+.compusRightWrapper p {
+  font-family: "Poppins", Sans-serif;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  word-spacing: 3px;
+}
+
+.compusRightWrapper h5 {
+  font-family: "Poppins", Sans-serif;
+  /* margin-bottom: 8px; */
+  font-size: 20px;
+  color: #6d6e71;
+  font-weight: 900;
+}
+
+.compusRightWrapper h4 {
+  font-family: "Poppins", Sans-serif;
+  margin: 0px;
+  padding: 0;
+  font-size: 2.5rem;
+  color: #58595b;
+  font-weight: 900;
+}
+
+.fllowAllStudent {
+  margin: 60px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+  grid-gap: 30px;
+  /* background-color: #6d6e71; */
+}
+
+.fllowSingalStudent {
+  background-color: #f7f7f39c;
+  border-radius: 5px;
+  /* box-shadow: 1px 1px 5px #b4b4b4; */
+  transition: all 0.2s;
+}
+
+.fllowSingalStudent:hover {
+  box-shadow: 8px 8px 0px #3a3a3a;
+}
+
+.fllowSingalStudent:hover .fellowStudentImage img {
+  border-left: 4px solid #ffcb0e;
+  border-top: 4px solid #ffcb0e;
+}
+
+.fellowStudentImage img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* border: 5px solid #ffcb0e; */
+  transition: all 0.2s;
+}
+
+.fellowStudentInfo {
+  padding: 10px;
+}
+
+.fellowStudentInfo h4 {
+  padding-bottom: 5px;
+  color: #000;
+}
+
+.fellowStudentInfo p {
+  padding-bottom: 5px;
+  color: #58595b;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.fellowWrapper {
+  padding: 60px 10px;
+  text-align: center;
+}
+
+.fellowTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fellowTitle h3 {
+  color: #000000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 42px;
+  letter-spacing: -2px;
+}
+
+.fellowTitle h3 span {
+  font-family: "Poppins", Sans-serif;
+  font-weight: 300;
+}
+
+.enrollmentAllCard {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 5px;
+  padding: 0 80px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.enrollmentSingalCard {
+  /* width: 176px; */
+  margin: 0px 15px;
+  background: #e6e7e8;
+  padding: 10px;
+  border: 3px solid #9c9c9c;
+  border-radius: 10px;
+}
+
+.enrollmentSingalCard img {
+  width: 60px;
+  margin-bottom: 10px;
+  transition: all ease-in-out 0.2s;
+}
+
+.enrollmentSingalCard:hover img {
+  transform: scale(1.1);
+}
+
+.enrollmentSingalCard h4 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.enrollmentSingalCard p {
+  margin-bottom: 10px;
+  line-height: 20px;
+  color: #58595b;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 300;
+}
+
+.eligibilityLeftAndRight {
+  display: flex;
+}
+
+.eligibilityLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
+.eligibilityLeft img {
+  width: 300px;
+}
+
+.eligibilityRight {
+  flex: 7;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.eligibilityRightAlltext {
+  width: 100%;
+  padding: 35px 40px;
+  border-left: 3px solid #9c9c9c;
+  background-color: #e6e7e8;
+}
+
+.eligibilityRightAlltext p {
+  color: #58595b;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.benefitsWrapper {
+  padding: 40px 0;
+}
+
+.benefitsDesc {
+  font-size: 13px;
+  color: #58595b;
+}
+
+.benefitsLeftAndRight {
+  display: flex;
+  background-color: #e6e7e8;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.benefitsLeftAndRight h4 {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.benefitsLeftAndRight p {
+  font-weight: 200;
+  font-size: 15px;
+  color: #58595b;
+  text-align: justify;
+  margin-left: 22px;
+}
+
+.benefitsLeft {
+  flex: 6;
+}
+
+.benefitsLeftSingalItem {
+  margin-bottom: 15px;
+}
+
+.benefitsRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitsRight img {
+  width: 350px;
+}
+
+.responsibilities {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.responsibilitiesSingalCardInfo {
+  margin: 0px 15px;
+  background: #e6e7e8;
+  padding: 10px;
+  border: 3px solid #9c9c9c;
+  border-radius: 10px;
+  height: 300px;
+}
+
+/* ==========================
+==========Form Style========
+============================= */
+
+.lead {
+  display: flex;
+  /* grid-template-columns: auto auto; */
+  margin: 3% 0%;
+  grid-gap: 20px;
+  /* width: 100%; */
+}
+
+#vfb-legend2041 {
+  margin-bottom: 1rem;
+}
+
+.legal-stuff {
+  padding: 0 0.5rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #6d6e71; */
+  margin-bottom: 20px;
+}
+
+.legal-stuff img {
+  width: 300px;
+}
+
+.submit-contanner {
+  margin: 0 0.2rem;
+}
+
+.submission {
+  flex: 5;
+  width: 59%;
+}
+
+fieldset {
+  padding: 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  /* background-color: #eee; */
+}
+
+.vfb-legend h3 {
+  font-family: Aktiv-Grotesk-W06-Regular;
+  font-size: 19px;
+  line-height: 2em;
+  border-bottom: 1px solid #cecdcd;
+  font-weight: 400;
+}
+
+fieldset ul li label {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #58595b;
+}
+
+fieldset ul li input {
+  border-radius: 3px;
+}
+
+/* fieldset ul li input,
+fieldset ul li select,
+fieldset ul li textarea {
+  width: 100%;
+} */
+
+.s25109 {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+}
+
+.s25110 {
+  width: 100%;
+  margin-bottom: 8px;
+  background: #fafafa;
+  padding: 10px;
+  border: 1px solid #e6e5e5;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.box-shawo {
+  box-shadow: 1px 1px 6px #0692e356, -1px -1px 6px #0692e356;
+  border: 1px solid #0692e391;
+}
+
+.checkbox2931 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.instructions-dec {
+  font-size: 11px;
+  padding-bottom: 8px;
+  display: block;
+  line-height: 18px;
+}
+
+.input-requart-star {
+  color: #bc1212;
+  margin-left: 2px;
+}
+
+.l-a-m2456 {
+  margin-top: -10px;
+}
+
+.Verifiy h3 {
+  font-family: Aktiv-Grotesk-W06-Regular;
+  font-size: 18px;
+  line-height: 2em;
+  border-bottom: 1px solid #cecdcd;
+  font-weight: 400;
+}
+
+.s2r510 {
+  width: 50%;
+}
+
+.chack_condition a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.submit_user_requirement {
+  border: none;
+  padding: 12px 16px;
+  background-color: #337ab7;
+  border-radius: 3px;
+  margin-top: 15px;
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hiden-files {
+  display: none;
+}
+
+.hiden-files {
+  display: none;
+}
+
+.show-file {
+  display: block;
+}
+
+.legal-stuff-list {
+  margin-right: 5px;
+}
+
+.addtion-file {
+  margin: 10px 0 18px 0;
+}
+
+.add_mor_files {
+  background: #dddcdc;
+  border-radius: 2px;
+  padding: 6px 18px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.add_mor_files:hover {
+  background: #e6e6e6;
+}
+
+.submit_user_requirement:hover,
+.submit_user_requirement:active {
+  background-color: #3d8dd3;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .lead {
+    margin: 3% 2.5%;
+  }
+  .compusWraper {
+    background-color: #dddcdc;
+    display: block;
+    overflow: hidden;
+  }
+  .compusLeftApplyWrapper .apply {
+    padding: 3px 0 3px 40px;
+  }
+  .compusLeftApplyWrapper .desc {
+    padding-left: 40px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .page-massage-container h1 {
-        font-size: 1.5rem;
-    }
+  .lead {
+    margin: 3% 2.5%;
+  }
+  .compusLeftApplyWrapper .apply {
+    padding: 3px 0 3px 40px;
+  }
+  .compusLeftApplyWrapper .desc {
+    padding-left: 40px;
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .page-massage {
-        margin: 1.5%;
-        padding: .8rem;
-    }
-    .page-massage-container {
-        padding: 2rem;
-    }
-    .page-massage-container h1 {
-        font-size: 1.3rem;
-    }
+@media screen and (max-width: 803px) {
+  .submission {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 400px) {
-    .page-massage-container {
-        padding: 1rem;
-    }
-    .page-massage-container h1 {
-        font-size: 1rem;
-    }
+@media screen and (max-width: 666px) {
+  .legal-stuff {
+    width: 100%;
+  }
+  .lead {
+    display: block;
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .compusRightWrapper h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .enrollmentAllCard {
+    padding: 0 11rem;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .compusRight {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .compusRight {
+    margin-right: 6rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .enrollmentAllCard {
+    padding: 0 15rem;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .compusRight {
+    margin-right: 9rem;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .compusRight {
+    margin-right: 28rem;
+  }
 }
