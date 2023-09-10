@@ -159,6 +159,16 @@
   font-size: 13px;
 }
 
+.swiper-slide-image-filter {
+  filter: grayscale(1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.swiper-slide-image-filter:hover {
+  filter: grayscale(0);
+}
+
 @media screen and (max-width: 900px) {
   .skil-develo-title h2 a {
     font-size: 2.5rem;
