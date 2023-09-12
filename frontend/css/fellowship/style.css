@@ -13,7 +13,7 @@
 }
 
 .compusLeftImage {
-  max-height: 400px;
+  max-height: 600px;
   float: 1;
   border-right: 1px solid #6d6e71;
 }
@@ -43,7 +43,7 @@
   padding: 3px 0 3px 100px;
   background: #6d6e71;
   color: #ffce1f;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400 !important;
   font-family: "Poppins", Sans-serif;
   transition: all 0.2s;
@@ -97,7 +97,7 @@
   font-family: "Poppins", Sans-serif;
   margin: 0px;
   padding: 0;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: #58595b;
   font-weight: 900;
 }
@@ -114,16 +114,11 @@
   background-color: #f7f7f39c;
   border-radius: 5px;
   /* box-shadow: 1px 1px 5px #b4b4b4; */
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
-.fllowSingalStudent:hover {
-  box-shadow: 8px 8px 0px #3a3a3a;
-}
-
-.fllowSingalStudent:hover .fellowStudentImage img {
-  border-left: 4px solid #ffcb0e;
-  border-top: 4px solid #ffcb0e;
+.fllowSingalStudent:hover img {
+  filter: grayscale(0);
 }
 
 .fellowStudentImage img {
@@ -132,8 +127,9 @@
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  /* border: 5px solid #ffcb0e; */
+  border: 5px solid #ffcb0e;
   transition: all 0.2s;
+  filter: grayscale(1);
 }
 
 .fellowStudentInfo {
@@ -190,13 +186,15 @@
   /* width: 176px; */
   margin: 0px 15px;
   background: #e6e7e8;
-  padding: 10px;
+  padding: 30px;
   border: 3px solid #9c9c9c;
   border-radius: 10px;
 }
 
 .enrollmentSingalCard img {
-  width: 60px;
+  width: 70px;
+  height: 70;
+  object-fit: cover;
   margin-bottom: 10px;
   transition: all ease-in-out 0.2s;
 }
@@ -207,7 +205,7 @@
 
 .enrollmentSingalCard h4 {
   font-size: 19px;
-  margin-bottom: 10px;
+  margin-bottom: 19px;
 }
 
 .enrollmentSingalCard p {
@@ -249,7 +247,7 @@
 
 .eligibilityRightAlltext p {
   color: #58595b;
-  line-height: 30px;
+  line-height: 35px;
   font-size: 15px;
 }
 
@@ -272,6 +270,7 @@
 .benefitsLeftAndRight h4 {
   font-weight: 700;
   font-size: 15px;
+  margin-bottom: 6px;
 }
 
 .benefitsLeftAndRight p {
@@ -279,7 +278,7 @@
   font-size: 15px;
   color: #58595b;
   text-align: justify;
-  margin-left: 22px;
+  margin-left: 25px;
 }
 
 .benefitsLeft {
@@ -287,7 +286,7 @@
 }
 
 .benefitsLeftSingalItem {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .benefitsRight {
@@ -311,10 +310,10 @@
 .responsibilitiesSingalCardInfo {
   margin: 0px 15px;
   background: #e6e7e8;
-  padding: 10px;
+  padding: 35px;
   border: 3px solid #9c9c9c;
   border-radius: 10px;
-  height: 300px;
+  height: 400px;
 }
 
 /* ==========================
@@ -499,6 +498,10 @@ fieldset ul li textarea {
 .submit_user_requirement:active {
   background-color: #3d8dd3;
   color: #ffffff;
+}
+
+.eligibilityRightAlltextBold {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
