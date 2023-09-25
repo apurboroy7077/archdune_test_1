@@ -507,6 +507,11 @@
 
 .boletPoint {
   font-size: 20px;
+  margin-right: 6px;
+}
+
+.boletPointSubtext {
+  margin-left: 54px;
 }
 
 @media screen and (max-width: 1600px) {

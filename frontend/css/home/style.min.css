@@ -1,203 +1,212 @@
 .top-baner-section {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 
 .top-baner-section img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .skil-development-section {
-  padding: 3rem 1%;
+    padding: 3rem 1%;
 }
 
 .skil-develo-title {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .skil-develo-title h2 {
-  padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 .skil-develo-title h2 a {
-  text-decoration: none;
-  font-size: 2.9rem;
-  color: #000;
+    text-decoration: none;
+    font-size: 2.9rem;
+    color: #000;
 }
 
 .skil-develo-title .s-d-light-text {
-  font-weight: 300;
-  font-family: "Poppins", Sans-serif;
+    font-weight: 300;
+    font-family: "Poppins", Sans-serif;
 }
 
 .skil-development-all-single-crouse {
-  width: 100%;
-  margin: 1rem 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+    width: 100%;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 .skil-development-single-crous {
-  width: 100%;
-  background: #ececec;
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 5px;
-  transition: all 0.3s;
+    width: 100%;
+    background: #ececec;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
 .skil-development-single-crous:hover {
-  box-shadow: 1px 1px 5px #94949470, -1px -1px 5px #94949470;
+    box-shadow: 1px 1px 5px #94949470, -1px -1px 5px #94949470;
 }
 
 .s-d-s-c-img {
-  width: auto;
-  height: 215px;
-  overflow: hidden;
-  position: relative;
+    width: auto;
+    height: 215px;
+    overflow: hidden;
+    position: relative;
 }
 
 .s-d-s-c-img img {
-  width: 100%;
-  border-radius: 5px;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .s-d-s-c-titleAndDec {
-  padding: 8px;
+    padding: 8px;
 }
 
 .s-d-s-c-titleAndDec h3 {
-  width: 100%;
-  margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .s-d-s-c-titleAndDec h3 a {
-  width: 100%;
-  text-decoration: none;
-  color: #000;
-  font-weight: 400;
-  font-size: 1rem;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .s-d-s-c-titleAndDec p {
-  color: #222222;
-  font-size: 12px;
-  line-height: 16px;
+    color: #222222;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .view-all {
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 2rem 0 1rem 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem 0 1rem 0;
 }
 
 .view-all a {
-  text-decoration: none;
-  border: 2px solid #333;
-  border-radius: 5px;
-  padding: 8px 24px;
-  color: #000;
-  font-size: 15px;
-  transition: all 0.3s;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 8px 24px;
+    color: #000;
+    font-size: 15px;
+    transition: all 0.3s;
 }
 
 .view-all a i {
-  margin-left: 8px;
+    margin-left: 8px;
 }
 
 .view-all a:hover {
-  border: 2px solid #ff7e00;
-  background: #ff7e00;
+    border: 2px solid #ff7e00;
+    background: #ff7e00;
 }
 
 .Our-Projects {
-  background: #ececec;
+    background: #ececec;
 }
 
 .project-box-shado {
-  /* border: 6px solid #fff; */
-  box-shadow: 1px 1px 5px #94949470, -1px -1px 5px #94949470 !important;
+    /* border: 6px solid #fff; */
+    box-shadow: 1px 1px 5px #94949470, -1px -1px 5px #94949470 !important;
 }
 
 .p-visit-link {
-  width: 100%;
-  margin: 1rem 0;
+    width: 100%;
+    margin: 1rem 0;
 }
 
 .project-visit-link {
-  border: 1px solid #333;
-  border-radius: 3px;
-  padding: 2px 20px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  text-align: center;
-  transition: all 0.3s;
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 2px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s;
 }
 
 .project-visit-link i {
-  margin-left: 5px;
-  font-size: 11px;
-  transition: all 0.3s;
+    margin-left: 5px;
+    font-size: 11px;
+    transition: all 0.3s;
 }
 
 .project-visit-link:hover {
-  background: #ff7e00;
-  letter-spacing: 1px;
-  border: 1px solid #ff7e00;
+    background: #ff7e00;
+    letter-spacing: 1px;
+    border: 1px solid #ff7e00;
 }
 
 .project-visit-link:hover i {
-  margin-left: 5px;
-  font-size: 13px;
+    margin-left: 5px;
+    font-size: 13px;
 }
 
 .swiper-slide-image-filter {
-  filter: grayscale(1);
-  transition: all 0.2s;
-  cursor: pointer;
+    filter: grayscale(1);
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
 .swiper-slide-image-filter:hover {
-  filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.swiper-slide-image {
+    filter: grayscale(1);
+    transition: all 0.3s;
+}
+
+.swiper-slide-inner:hover .swiper-slide-image {
+    filter: grayscale(0);
 }
 
 @media screen and (max-width: 900px) {
-  .skil-develo-title h2 a {
-    font-size: 2.5rem;
-  }
-  .skil-development-all-single-crouse {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
+    .skil-develo-title h2 a {
+        font-size: 2.5rem;
+    }
+    .skil-development-all-single-crouse {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
 }
 
 @media screen and (max-width: 682px) {
-  .skil-develo-title h2 a {
-    font-size: 2rem;
-  }
+    .skil-develo-title h2 a {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .skil-develo-title h2 a {
-    font-size: 1.8rem;
-  }
-  .skil-development-all-single-crouse {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
-  .skil-development-section {
-    padding: 3rem 3%;
-  }
+    .skil-develo-title h2 a {
+        font-size: 1.8rem;
+    }
+    .skil-development-all-single-crouse {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .skil-development-section {
+        padding: 3rem 3%;
+    }
 }
