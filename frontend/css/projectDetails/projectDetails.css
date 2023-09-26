@@ -514,6 +514,10 @@
   margin-left: 54px;
 }
 
+.mb404 {
+  width: 10% !important;
+}
+
 @media screen and (max-width: 1600px) {
   .left-project-link {
     padding-left: 12px;
