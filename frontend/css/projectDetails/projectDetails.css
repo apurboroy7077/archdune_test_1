@@ -507,7 +507,9 @@
 
 .boletPoint {
   font-size: 20px;
+  overflow: hidden;
   margin-right: 6px;
+  margin-top: 10px;
 }
 
 .boletPointSubtext {
