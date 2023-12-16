@@ -3,26 +3,38 @@
 }
 
 .lead {
-  display: grid;
-  grid-template-columns: auto auto;
+  /* display: grid;
+  grid-template-columns: auto auto; */
+  display: flex;
   margin: 3% 0%;
   grid-gap: 20px;
   /* width: 100%; */
+}
+
+
+
+.legal-stuff {
+  padding: 0 0.5rem;
+  flex: 50%;
 }
 
 #vfb-legend2041 {
   margin-bottom: 1rem;
 }
 
-.legal-stuff {
-  padding: 0 0.5rem;
+.legal-stuff h3 {
+  /* font-family: aAktiv-Grotesk-W06-Light; */
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-size: 8.5rem;
+  color: #888;
+  font-weight: bolder;
+  display: inline-block;
 }
 
-.legal-stuff h3 {
-  font-family: aAktiv-Grotesk-W06-Light;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  font-size: 22px;
+.legal-all-content{
+ margin-left: 13.1rem;
+ margin-right: 10px;
 }
 
 .legal-stuff ul li,
@@ -30,7 +42,7 @@
   font-family: Aktiv-Grotesk-W06-Regular;
   margin-bottom: 12px;
   text-align: justify;
-  /* font-size: 15px; */
+  font-size: 20px;
   width: 100%;
   color: #333;
 }
@@ -51,6 +63,7 @@
 
 .submission {
   width: 99%;
+  flex: 50%;
 }
 
 fieldset {
@@ -196,6 +209,69 @@ fieldset ul li textarea {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1600px) {
+  .legal-stuff h3 {
+    font-size: 8rem;
+  }
+  
+  .legal-all-content{
+   margin-left: 12.5rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .legal-stuff h3 {
+    font-size: 7rem;
+  }
+  
+  .legal-all-content{
+   margin-left: 11.2rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .legal-stuff h3 {
+    font-size: 6rem;
+  }
+  
+  .legal-all-content{
+   margin-left: 9rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .legal-stuff h3 {
+    font-size: 5rem;
+  }
+  
+  .legal-all-content{
+   margin-left: 7.4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .legal-stuff h3 {
+    font-size: 5rem;
+  }
+  
+  .legal-all-content{
+   margin-left: 0rem;
+  }
+
+  .lead {
+    display: block;
+}
+
+  .legal-stuff {
+    flex: 100%;
+  }
+
+  .submission {
+    flex: 100%;
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .lead {
     margin: 3% 2.5%;
@@ -212,4 +288,10 @@ fieldset ul li textarea {
   .lead {
     grid-template-columns: auto;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .legal-stuff h3 {
+    font-size: 3rem;
+}
 }
