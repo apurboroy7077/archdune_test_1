@@ -110,11 +110,23 @@
   margin-bottom: 15px;
 }
 .images .card{
-  display: flex;
+  /* display: flex; */
   margin-bottom: 15px;
+  list-style-type: none;
+  position: relative;
 }
 .images .card img{
   width: 100%;
+  position: relative;
+}
+
+.cardHover{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.637);
+  color: #f7f7f7;
 }
 
 
