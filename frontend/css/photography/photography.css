@@ -114,21 +114,62 @@
   margin-bottom: 15px;
   list-style-type: none;
   position: relative;
+  overflow: hidden;
+  cursor: pointer
+  ;
 }
 .images .card img{
   width: 100%;
+  z-index: 2;
   position: relative;
 }
 
 .cardHover{
   position: absolute;
-  top: 0;
+  z-index: 2;
+  bottom: -90px;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.637);
-  color: #f7f7f7;
+  padding: 12px 15px;
+  background: linear-gradient(#00000003, #000);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .3s;
 }
 
+.images .card:hover .cardHover{
+  bottom: 0px;
+}
+
+.cardHoverButtomUser{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.cardHoverButtomUser img{
+  width: 45px !important;
+  height: 45px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.cardHoverButtomUser a{
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.cardHoverButtomLick button{
+  background: rgb(2, 101, 158);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px 15px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 900px) {
   .photography-title h2 {
