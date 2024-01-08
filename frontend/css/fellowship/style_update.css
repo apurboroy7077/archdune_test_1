@@ -107,22 +107,14 @@
   margin: 40px 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between; /* Adjust the spacing between cards */
 }
 
 .fllowSingalStudent {
-  width: calc(25% - 30px); /* Adjust the percentage and margin to leave space between cards */
-  min-width: 260px; /* Set a minimum width for each card */
-  box-sizing: border-box;
+  width: calc(25% - 20px); /* Adjust the percentage and margin to leave space between cards */
+  margin-bottom: 20px; /* Add some space between rows of cards */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
   transition: all 0.3s;
-}
-
-@media screen and (max-width: 767px) {
-  .fllowSingalStudent {
-    width: 100%; /* Take up the full width on smaller screens */
-    min-width: auto; /* Reset the minimum width for mobile */
-  }
 }
 
 .fllowSingalStudent:hover img {
@@ -136,6 +128,7 @@
   border: 5px solid #ffcb0e;
   transition: all 0.2s;
   filter: grayscale(1);
+  border-radius: 8px;
 }
 
 .fellowStudentInfo {
@@ -175,6 +168,14 @@
 .fellowTitle h3 span {
   font-family: "Poppins", Sans-serif;
   font-weight: 300;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 767px) {
+  .fllowSingalStudent {
+    width: 100%; /* Take up the full width on smaller screens */
+    margin-bottom: 20px; /* Add some space between rows of cards */
+  }
 }
 
 
@@ -532,14 +533,17 @@ fieldset ul li textarea {
   .lead {
     margin: 3% 2.5%;
   }
+
   .compusWraper {
     background-color: #dddcdc;
     display: block;
     overflow: hidden;
   }
+
   .compusLeftApplyWrapper .apply {
     padding: 3px 0 3px 40px;
   }
+
   .compusLeftApplyWrapper .desc {
     padding-left: 40px;
   }
@@ -549,9 +553,11 @@ fieldset ul li textarea {
   .lead {
     margin: 3% 2.5%;
   }
+
   .compusLeftApplyWrapper .apply {
     padding: 3px 0 3px 40px;
   }
+
   .compusLeftApplyWrapper .desc {
     padding-left: 40px;
   }
@@ -567,6 +573,7 @@ fieldset ul li textarea {
   .legal-stuff {
     width: 100%;
   }
+
   .lead {
     display: block;
     grid-template-columns: auto;
