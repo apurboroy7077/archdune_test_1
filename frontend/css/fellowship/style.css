@@ -112,7 +112,9 @@
 }
 
 .fllowSingalStudent {
-  width: calc(25% - 30px); /* Adjust the percentage and margin to leave space between cards */
+  width: calc(
+    25% - 30px
+  ); /* Adjust the percentage and margin to leave space between cards */
   min-width: 260px; /* Set a minimum width for each card */
   box-sizing: border-box;
   transition: all 0.3s;
@@ -176,7 +178,6 @@
   font-family: "Poppins", Sans-serif;
   font-weight: 300;
 }
-
 
 .b4eligibility {
   margin-bottom: -30px;
@@ -613,4 +614,9 @@ fieldset ul li textarea {
   .compusRight {
     margin-right: 28rem;
   }
+}
+
+/* Work on image gallery */
+.lightboxOverlay {
+  opacity: 1 !important;
 }
