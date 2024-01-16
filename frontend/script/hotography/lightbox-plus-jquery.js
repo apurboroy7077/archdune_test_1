@@ -11957,20 +11957,3 @@ function projectShear() {
 }
 
 projectShear();
-
-// const lightboxOverlay = document.querySelector("#lightboxOverlay");
-// const card = document.querySelectorAll(".card");
-
-// card.forEach((i) => {
-//   i.addEventListener("click", () => {
-//     document.body.style.overflow = "hidden";
-//   });
-// });
-
-// const lbClose = document.querySelector(".lb-close");
-
-// console.log(lbClose);
-
-// lbClose.addEventListener("click", () => {
-//   document.body.style.overflow = "scroll";
-// });

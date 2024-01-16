@@ -239,3 +239,46 @@ body {
 .lightbox .lb-image {
   border: 4px solid #fff;
 }
+
+@media screen and (max-width: 979px) {
+  .lightbox {
+    overflow: auto;
+    display: block;
+  }
+  .lb-outerContainer {
+    overflow: hidden;
+    width: 100% !important;
+  }
+  .lb-dataContainer {
+    width: 100% !important;
+  }
+  .lb-data .lb-details {
+    width: 100%;
+    position: relative;
+  }
+  .lb-data {
+    display: flex;
+    background-color: #333333;
+    /* margin: -10px; */
+  }
+
+  .lb-dataContainer {
+    /* width: 100% !important; */
+  }
+  /* .lightbox {
+    display: block;
+  }
+  .lb-outerContainer {
+    width: 100% !important;
+  }
+  .lb-loade {
+    position: relative;
+  }
+  .lb-data .lb-details {
+    position: relative;
+    width: 100% !important;
+  }
+  .lb-dataContainer {
+    width: 100% !important;
+  } */
+}
