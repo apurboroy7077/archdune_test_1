@@ -261,24 +261,4 @@ body {
     background-color: #333333;
     /* margin: -10px; */
   }
-
-  .lb-dataContainer {
-    /* width: 100% !important; */
-  }
-  /* .lightbox {
-    display: block;
-  }
-  .lb-outerContainer {
-    width: 100% !important;
-  }
-  .lb-loade {
-    position: relative;
-  }
-  .lb-data .lb-details {
-    position: relative;
-    width: 100% !important;
-  }
-  .lb-dataContainer {
-    width: 100% !important;
-  } */
 }
