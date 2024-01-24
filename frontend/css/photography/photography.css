@@ -110,12 +110,14 @@
   margin-bottom: 15px;
 }
 .images .card {
-  /* display: flex; */
+  display: flex; 
   margin-bottom: 15px;
   list-style-type: none;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 .images .card img {
   width: 100%;
@@ -156,6 +158,10 @@
 .cardHoverButtomUser a {
   text-decoration: none;
   color: #cccccc;
+}
+
+.cardHoverName{
+	color: #cccccc; 
 }
 
 .cardHoverButtomLick button {
