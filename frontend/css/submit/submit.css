@@ -209,6 +209,24 @@ fieldset ul li textarea {
   color: #ffffff;
 }
 
+.submit-social-info{
+  margin-top: 60px;
+  margin-left: 12.5rem;
+}
+
+.submit-social-info p{
+  font-weight: 100;
+  font-size: 48px;
+}
+
+.submit-social-info ul{
+  padding: 10px 0 0 32px;
+}
+
+.submit-social-info ul li{
+  font-weight: 100px;
+}
+
 @media screen and (max-width: 1600px) {
   .legal-stuff h3 {
     font-size: 8rem;

@@ -1,9 +1,9 @@
-const activePage = window.location.pathname;
-const navLink = document.querySelectorAll("nav a").forEach((link) => {
-  if (link.href.includes(`${activePage}`)) {
-    link.classList.add("actives");
-  }
-});
+// const activePage = window.location.pathname;
+// const navLink = document.querySelectorAll("nav a").forEach((link) => {
+//   if (link.pathname === activePage) {
+//     link.classList.add("actives");
+//   }
+// });
 
 const mobileMenu = document.querySelector(".mobile-menu");
 const navManu = document.querySelector(".nav-manu");

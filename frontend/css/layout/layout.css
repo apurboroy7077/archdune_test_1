@@ -145,6 +145,9 @@ html {
   width: 100%;
 }
 
+.all-had-item .header-list .header-list:after.active {
+  width: 100%;
+}
 .all-had-item .header-list a {
   text-decoration: none;
   text-decoration: none;
@@ -153,13 +156,24 @@ html {
   font-size: 15px;
 }
 
-a:is(:link, :active, :visited).active {
+.header-list a:is(:link, :active, :visited).active {
   color: #f86d1c;
 }
 
 .all-had-item .header-list:hover a {
   color: #f86d1c;
 }
+.header-list a.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #f86d1c;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s;
+}
+
 
 /* .all-had-item .header-list:last-child {
   padding-right: 0px;

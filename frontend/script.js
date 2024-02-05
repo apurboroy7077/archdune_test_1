@@ -10,10 +10,28 @@ allInputfilds.forEach((item) => {
 
 // submit pages files script
 
-const addMorFiles = document.querySelector(".add_mor_files");
-const hidenFiles = document.querySelector(".hiden-files");
-addMorFiles.addEventListener("click", function () {
-  hidenFiles.classList.toggle("show-file");
-});
+// const addMorFiles = document.querySelector(".add_mor_files");
+// const hidenFiles = document.querySelector(".hiden-files");
+// addMorFiles.addEventListener("click", function () {
+//   hidenFiles.classList.toggle("show-file");
+// });
 
 // project Detels
+
+
+const buyBtn = document.querySelector(".banerRight-buy-btn");
+const buyPopup = document.querySelector(".book-buy-message");
+
+const handalBuy = () => {
+  buyPopup.classList.add("showBuyBox");
+  document.body.style.overflow = "hidden"
+}
+
+
+const closePupop = () => {
+  buyPopup.classList.remove("showBuyBox");
+  document.body.style.overflow = "auto"
+}
+
+
+buyBtn.addEventListener('click', handalBuy)

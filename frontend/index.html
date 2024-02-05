@@ -60,6 +60,49 @@
   </head>
 
   <body>
+
+    <!-- start PopUp message -->
+
+      <div class="book-buy-message">
+        <div class="book-buy-message-container">
+          <button class="closePupop" onclick="closePupop()"><i class="fa-solid fa-xmark"></i></button>
+          <div class="book-buy-top-contant">
+            <h3>About Info</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <form>
+            <label class="book-buy-input" for="name">
+              <input type="text" required name="name" id="name" placeholder="Name" >
+              <span class="book-input-icon"><i class="fa-solid fa-user"></i></span>
+            </label>
+            <label class="book-buy-input" for="phone">
+              <input type="number" required name="phone" id="phone" placeholder="Phone Number">
+              <span class="book-input-icon"><i class="fa-solid fa-phone-flip"></i></span>
+            </label>
+            <label class="book-buy-input" for="adders">
+              <input type="text" required name="adders" id="adders" placeholder="Adders">
+              <span class="book-input-icon"><i class="fa-solid fa-map"></i></span>
+            </label>
+            <div class="pamentAndsubmit">
+              <div class="pament-sytem">
+                <div class="pament-sytem-item">
+                  <img src="images/bkash-logo.png">
+                </div>
+                <div class="pament-sytem-item">
+                  <img src="images/nagad-logo.jpg">
+                </div>
+                <div class="pament-sytem-item">
+                  <img src="images/roket-logo2.png">
+                </div>
+              </div>
+              <button type="submit">Buy</button>
+            </div>
+            </form>
+        </div>
+      </div>
+
+    <!-- End PopUp message -->
+
     <!-- Header Section Stast -->
     <header>
       <section id="h-top-messag">
@@ -79,7 +122,7 @@
                   </p>
                 </li>
                 <li>
-                  <a href="#"> Submit </a>
+                  <a href="submit.html"> Submit </a>
                 </li>
               </ul>
             </div>
@@ -129,14 +172,14 @@
               </div>
               <div class="header-item">
                 <ul class="all-had-item">
-                  <li class="header-list"><a href="./index.html">Home</a></li>
+                  <li class="header-list "><a href="/">Home</a></li>
 
                   <li class="header-list">
                     <a href="./project.html">Project</a>
                   </li>
 
                   <li class="header-list show-sub-item">
-                    <a href="#">Learn <i class="fa-solid fa-caret-down"></i></a>
+                    <a href="javascript:void(0)">Learn <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="sub-had-item">
                       <li class="sub-had-list">
                         <a href="#">Join Live Sessions</a>
@@ -174,7 +217,7 @@
 
     <main>
       <!-- Start Top Add Baner Section -->
-      <!-- <section class="baner">
+ <section class="baner">
         <div class="wro banerMainContant">
           <div class="banerLeft">
             <img src="images/add banear/Book.jpg" />
@@ -192,12 +235,11 @@
           </div>
           <div class="banerRight">
             <img src="images/home_page _img/ArchDune-logo04.png" />
-            <a href="#" download=""
-              ><span>Download</span> <i class="fa-solid fa-download"></i
-            ></a>
+            <a href="#" class="banerRight-buy-btn"
+              ><span>Buy Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- End Top Add Baner Section -->
 

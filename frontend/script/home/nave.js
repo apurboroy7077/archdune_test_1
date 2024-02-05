@@ -17,8 +17,11 @@ window.addEventListener('scroll', function() {
 const active_page = window.location.pathname;
 const navLinks = document.querySelectorAll(".all-had-item a");
 
-navLinks.forEach(links => {
-    if (links.href.includes(`${active_page}`)) {
-        links.classList.add("active")
+
+navLinks.forEach(link => {
+    if ((link.pathname === '/' && active_page === '/index.html') || link.pathname === active_page) {
+        link.classList.add("active");
+    } else {
+        link.classList.remove("active");
     }
 })
