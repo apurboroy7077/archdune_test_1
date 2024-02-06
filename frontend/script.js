@@ -19,7 +19,7 @@ allInputfilds.forEach((item) => {
 // project Detels
 
 
-const buyBtn = document.querySelector(".banerRight-buy-btn");
+const buyBtn = document.querySelectorAll(".banerRight-buy-btn");
 const buyPopup = document.querySelector(".book-buy-message");
 
 const handalBuy = () => {
@@ -33,5 +33,6 @@ const closePupop = () => {
   document.body.style.overflow = "auto"
 }
 
-
-buyBtn.addEventListener('click', handalBuy)
+buyBtn.forEach((i)=>{
+  i.addEventListener('click', handalBuy)
+})

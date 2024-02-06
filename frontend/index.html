@@ -57,6 +57,8 @@
       href="./css/frems/post-2627.css"
       media="all"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -220,7 +222,14 @@
  <section class="baner">
         <div class="wro banerMainContant">
           <div class="banerLeft">
-            <img src="images/add banear/Book.jpg" />
+            <div class="swiper bookSwip">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/book/img5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/book/Big_Java-Cay.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/book/img3.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/book/img4.jpg" alt=""></div>
+              </div>
+            </div>
           </div>
           <div class="banerCenter">
             <h1>Book Name</h1>
@@ -232,6 +241,8 @@
               perferendis amet totam error ad cumque animi consequuntur itaque
               harum repudiandae accusamus incidunt iste a doloremque!
             </p>
+            <a href="#" class=" banerRight-buy-btn mohi32"
+              ><span>Buy Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
           </div>
           <div class="banerRight">
             <img src="images/home_page _img/ArchDune-logo04.png" />
@@ -922,6 +933,16 @@
     <!------- end footer Section ------->
 
     <!-- #page -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".bookSwip", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
