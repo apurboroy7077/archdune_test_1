@@ -1,14 +1,7 @@
 * {
   text-decoration: none;
 }
-.project_page_header {
-  z-index: 5;
-  background-color: white;
-}
-.project_page_header_while_scroll {
-  position: sticky;
-  top: 0px;
-}
+
 .sub-cointainers {
   display: flex;
   /* align-items: center; */
