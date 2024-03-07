@@ -1,540 +1,693 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <title>ArchDune || Home</title>
+    <link
+      rel="shortcut icon"
+      href="./images/home_page _img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- state my castomais -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="profile" href="https://gmpg.org/xfn/11" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <title>ArchDune || Home</title>
-  <link rel="shortcut icon" href="./images/home_page _img/favicon.ico" type="image/x-icon" />
-  <!-- state my castomais -->
+    <link
+      rel="stylesheet"
+      id="astra-google-fonts-css"
+      href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C&#038;display=fallback&#038;ver=4.0.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.2"
+      media="all"
+    />
+    <link rel="stylesheet" href="./css/home/header.css" />
+    <link rel="stylesheet" href="./css/layout/layout.css" />
+    <link rel="stylesheet" href="./css/home/footer.css" />
+    <link rel="stylesheet" href="./css/home/style.min.css" />
 
-  <link rel="stylesheet" id="astra-google-fonts-css"
-    href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C&#038;display=fallback&#038;ver=4.0.2" media="all" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!--  -->
-  <link rel="stylesheet" id="google-fonts-1-css"
-    href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.2"
-    media="all" />
-  <link rel="stylesheet" href="./css/home/header.css" />
-  <link rel="stylesheet" href="./css/layout/layout.css" />
-  <link rel="stylesheet" href="./css/home/footer.css" />
-  <link rel="stylesheet" href="./css/home/style.min.css" />
+    <!-- frem -->
+    <link
+      rel="stylesheet"
+      id="swiper-css"
+      href="./css/frems/swiper.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-frontend-css"
+      href="./css/frems/frontend.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-2627-css"
+      href="./css/frems/post-2627.css"
+      media="all"
+    />
 
-  <!-- frem -->
-  <link rel="stylesheet" id="swiper-css" href="./css/frems/swiper.min.css" media="all" />
-  <link rel="stylesheet" id="elementor-frontend-css" href="./css/frems/frontend.min.css" media="all" />
-  <link rel="stylesheet" id="elementor-post-2627-css" href="./css/frems/post-2627.css" media="all" />
+    <link rel="stylesheet" href="css/home/swiper-bundle.min.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/home/swiper-bundle.min.css" />
-</head>
+  <body>
+    <!-- start PopUp message -->
 
-<body>
-
-  <!-- start PopUp message -->
-
-  <div class="book-buy-message">
-    <div class="book-buy-message-container">
-      <button class="closePupop" onclick="closePupop()"><i class="fa-solid fa-xmark"></i></button>
-      <div class="book-buy-top-contant">
-        <h3>About Info</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <form>
-        <label class="book-buy-input" for="name">
-          <input type="text" required name="name" id="name" placeholder="Name">
-          <span class="book-input-icon"><i class="fa-solid fa-user"></i></span>
-        </label>
-        <label class="book-buy-input" for="phone">
-          <input type="number" required name="phone" id="phone" placeholder="Phone Number">
-          <span class="book-input-icon"><i class="fa-solid fa-phone-flip"></i></span>
-        </label>
-        <label class="book-buy-input" for="adders">
-          <input type="text" required name="adders" id="adders" placeholder="Adders">
-          <span class="book-input-icon"><i class="fa-solid fa-map"></i></span>
-        </label>
-        <div class="pamentAndsubmit">
-          <div class="pament-sytem">
-            <div class="pament-sytem-item">
-              <img src="images/bkash-logo.png">
-            </div>
-            <div class="pament-sytem-item">
-              <img src="images/nagad-logo.jpg">
-            </div>
-            <div class="pament-sytem-item">
-              <img src="images/roket-logo2.png">
-            </div>
-          </div>
-          <button type="submit">Buy</button>
+    <div class="book-buy-message">
+      <div class="book-buy-message-container">
+        <button class="closePupop" onclick="closePupop()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="book-buy-top-contant">
+          <h3>About Info</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-      </form>
+        <form>
+          <label class="book-buy-input" for="name">
+            <input
+              type="text"
+              required
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <span class="book-input-icon"
+              ><i class="fa-solid fa-user"></i
+            ></span>
+          </label>
+          <label class="book-buy-input" for="phone">
+            <input
+              type="number"
+              required
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+            />
+            <span class="book-input-icon"
+              ><i class="fa-solid fa-phone-flip"></i
+            ></span>
+          </label>
+          <label class="book-buy-input" for="adders">
+            <input
+              type="text"
+              required
+              name="adders"
+              id="adders"
+              placeholder="Adders"
+            />
+            <span class="book-input-icon"><i class="fa-solid fa-map"></i></span>
+          </label>
+          <div class="pamentAndsubmit">
+            <div class="pament-sytem">
+              <div class="pament-sytem-item">
+                <img src="images/bkash-logo.png" />
+              </div>
+              <div class="pament-sytem-item">
+                <img src="images/nagad-logo.jpg" />
+              </div>
+              <div class="pament-sytem-item">
+                <img src="images/roket-logo2.png" />
+              </div>
+            </div>
+            <button type="submit">Buy</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
 
-  <!-- End PopUp message -->
+    <!-- End PopUp message -->
 
-  <!-- Header Section Stast -->
-  <header>
-    <section id="h-top-messag">
-      <div class="wro">
-        <div class="cointainer h-p-360">
-          <div class="leftsit-elementor-text">
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="far fa-envelope"></i> contact@archdune.com
-                </a>
-              </li>
-              <li>
-                <p>
-                  <i aria-hidden="true" class="fas fa-phone-alt"></i> +880
-                  1716-728989
-                </p>
-              </li>
-              <li>
-                <a href="submit.html"> Submit </a>
-              </li>
-            </ul>
-          </div>
-          <div class="right-elementor-icons">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/archdunebd"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://www.pinterest.com/archdune/_saved/"><i class="fa-brands fa-pinterest"></i></a>
-              </li>
-              <li>
-                <a href="
-                                https://www.youtube.com/channel/UCSBBpXohQUh-jZzgnT9U-fg"><i
-                    class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/archdune/"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="header_nave">
-      <div class="wro">
-        <div class="cointainer navBar">
-          <nav class="Hello">
-            <div class="header-logo">
-              <a href="index.html"><img src="./images/home_page _img/ArchDune-logo.png" alt /></a>
-              <a href="index.html" class="header-logo-text"><span>ArchDune</span></a>
-            </div>
-            <div class="header-item">
-              <ul class="all-had-item">
-                <li class="header-list "><a href="/">Home</a></li>
-
-                <li class="header-list">
-                  <a href="./project.html">Project</a>
+    <!-- Header Section Stast -->
+    <header>
+      <section id="h-top-messag">
+        <div class="wro">
+          <div class="cointainer h-p-360">
+            <div class="leftsit-elementor-text">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="far fa-envelope"></i> contact@archdune.com
+                  </a>
                 </li>
-
-                <li class="header-list show-sub-item">
-                  <a href="javascript:void(0)">Learn <i class="fa-solid fa-caret-down"></i></a>
-                  <ul class="sub-had-item">
-                    <li class="sub-had-list">
-                      <a href="#">Join Live Sessions</a>
-                    </li>
-                    <li class="sub-had-list">
-                      <a href="#">Buy Recorded Classes</a>
-                    </li>
-                  </ul>
+                <li>
+                  <p>
+                    <i aria-hidden="true" class="fas fa-phone-alt"></i> +880
+                    1716-728989
+                  </p>
                 </li>
-                <li class="header-list">
-                  <a href="./competition.html">Competition</a>
-                </li>
-                <li class="header-list">
-                  <a href="./fellowship.html">Fellowship</a>
+                <li>
+                  <a href="submit.html"> Submit </a>
                 </li>
               </ul>
             </div>
-            <div class="mobile-navbar-btn">
-              <ion-icon name="menu-outline" class="mobile-nav-icon h-menu"></ion-icon>
-              <ion-icon name="close-outline" class="mobile-nav-icon h-close"></ion-icon>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </section>
-  </header>
-
-  <!-- Header Section Ende -->
-
-  <main>
-    <!-- Start Top Add Baner Section -->
-    <section class="baner">
-      <div class="wro banerMainContant">
-        <div class="banerLeft">
-          <div class="swiper bookSwip">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./images/book/img5.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="./images/book/Big_Java-Cay.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="./images/book/img3.jpeg" alt=""></div>
-              <div class="swiper-slide"><img src="./images/book/img4.jpg" alt=""></div>
-            </div>
-          </div>
-        </div>
-        <div class="banerCenter">
-          <h1>Book Name</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            debitis iste impedit rerum facere maxime beatae consectetur
-            dolorem, mollitia dicta et accusamus sapiente ipsa illo ullam!
-            Quos reprehenderit ducimus fugiat corrupti neque esse quidem,
-            perferendis amet totam error ad cumque animi consequuntur itaque
-            harum repudiandae accusamus incidunt iste a doloremque!
-          </p>
-          <a href="#" class=" banerRight-buy-btn mohi32"><span>Buy Now</span> <i
-              class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <div class="banerRight">
-          <img src="images/home_page _img/ArchDune-logo04.png" />
-          <a href="#" class="banerRight-buy-btn"><span>Buy Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Top Add Baner Section -->
-
-    <!-- Top Baner Section Stast -->
-    <section>
-      <!-- <div class="wro"> -->
-      <div class="top-baner-section">
-        <div class="top-baner">
-          <img src="./images/home_page _img/ArchDune-bg-baner.jpg" alt />
-        </div>
-      </div>
-      <!-- </div> -->
-    </section>
-    <!-- Top Baner Section End -->
-
-    <!-- Skill Development Courses Stast -->
-    <section>
-      <div class="wro">
-        <div class="skil-development-section-container">
-          <div class="skil-development-section">
-            <div class="skil-develo-title">
-              <h2>
-                <a href="#"><span class="s-d-light-text">Our </span><span class="s-d-bold-text">Skill Development
-                  </span><span class="s-d-light-text">Courses</span></a>
-              </h2>
-            </div>
-            <div class="skil-development-all-single-crouse">
-              <div class="skil-development-single-crous">
-                <div class="s-d-s-c-img">
-                  <a href="#">
-                    <img src="./images/home_page _img/skill/blender_300x200.jpg" alt />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="#">Beginner’s Guide to Blender </a>
-                  </h3>
-                  <p>
-                    This carefully structured course will include the
-                    fundamentals of Blender 3.2 along with tips and tricks
-                    learned through years of experience.
-                  </p>
-                </div>
-              </div>
-
-              <div class="skil-development-single-crous">
-                <div class="s-d-s-c-img">
-                  <a href="#">
-                    <img src="./images/home_page _img/skill/revit_300x200.jpg" alt />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="#">Introduction to BIM | Autodesk Revit</a>
-                  </h3>
-                  <p>
-                    This course will teach you how to use Autodesk Revit in an
-                    easy and straightforward manner. Also discussed is how
-                    Autodesk Revit can be used to model shapes, structures,
-                    and systems in 3D with parametric accuracy, precision, and
-                    ease, as well as documentation work, including quick
-                    modifications to plans, elevations, schedules, and
-                    sections as projects evolve.
-                  </p>
-                </div>
-              </div>
-
-              <div class="skil-development-single-crous">
-                <div class="s-d-s-c-img">
-                  <a href="#">
-                    <img src="./images/home_page _img/skill/photoshop_300x200.jpg" alt />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="#">Photoshop Essentials for Architectural Visualization</a>
-                  </h3>
-                  <p>
-                    This course is aimed to help you understand how you can
-                    use only photoshop to produce presentable drawings from
-                    generic 3D scene or hand drawings.
-                  </p>
-                </div>
-              </div>
-
-              <div class="skil-development-single-crous">
-                <div class="s-d-s-c-img">
-                  <a href="#">
-                    <img src="./images/home_page _img/skill/lumion_300x200.jpg" alt />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="#">Lumion Essentials: Introduction to Architectural
-                      Rendering</a>
-                  </h3>
-                  <p>
-                    This course is designed to give a kickstarter to Lumion
-                    basics to help participants create a fluent relationship
-                    with rendering workflow. It will also guide participants
-                    to create their desired rendering style and atmosphere
-                    within the shortest possible time.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="view-all">
-              <a href="#">
-                View All Courses
-                <i class="far fa-arrow-alt-circle-right"></i>
-              </a>
+            <div class="right-elementor-icons">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/archdunebd"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.pinterest.com/archdune/_saved/"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="
+                                https://www.youtube.com/channel/UCSBBpXohQUh-jZzgnT9U-fg"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/archdune/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Skill Development Courses End -->
-
-    <!-- Project Srction Start -->
-    <section>
-      <div class="wro">
-        <div class="skil-development-section-container">
-          <div class="skil-development-section Our-Projects">
-            <div class="skil-develo-title">
-              <h2>
-                <a href="#"><span class="s-d-bold-text">Projects</span></a>
-              </h2>
-            </div>
-            <div class="skil-development-all-single-crouse">
-              <div class="skil-development-single-crous project-box-shado">
-                <div class="s-d-s-c-img">
-                  <a href="projectDetails9.html">
-                    <img src="images/project_page_img/TanbirHasan/01_ cover photo.jpg"
-                      alt="A Vernacular Architectural Learning Centrer" />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="projectDetails9.html">A Vernacular Architectural Learning Centre</a>
-                  </h3>
-                  <p>
-                    Vernacular architecture holds a unique and captivating
-                    beauty that emerges from its deep connection to local
-                    cultures, landscapes and traditions. Dinajpur district is
-                    situated in the north of Bangladesh.
-                  </p>
-                  <div class="p-visit-link">
-                    <a href="projectDetails9.html" class="project-visit-link">Visit
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
+      </section>
+      <section id="header_nave">
+        <div class="wro">
+          <div class="cointainer navBar">
+            <nav class="Hello">
+              <div class="header-logo">
+                <a href="index.html"
+                  ><img src="./images/home_page _img/ArchDune-logo.png" alt
+                /></a>
+                <a href="index.html" class="header-logo-text"
+                  ><span>ArchDune</span></a
+                >
               </div>
+              <div class="header-item">
+                <ul class="all-had-item">
+                  <li class="header-list"><a href="/">Home</a></li>
 
-              <div class="skil-development-single-crous project-box-shado">
-                <div class="s-d-s-c-img">
-                  <a href="projectDetails8.html">
-                    <img src="images/project_page_img/FarhanaHaque/Farhana Haque_01.jpg" alt="Paramount Concord" />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="projectDetails8.html">Design of A Commercial High-rise Building</a>
-                  </h3>
-                  <p>
-                    This project pertains to the design of a commercial
-                    high-rise building, which is a multi-story building that
-                    is tall enough to require mechanical vertical
-                    transportation, such as elevators.
-                  </p>
-                  <div class="p-visit-link">
-                    <a href="projectDetails8.html" class="project-visit-link">Visit
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
+                  <li class="header-list">
+                    <a href="./project.html">Project</a>
+                  </li>
 
-              <div class="skil-development-single-crous project-box-shado">
-                <div class="s-d-s-c-img">
-                  <a href="projectDetails7.html">
-                    <img src="images/project_page_img/afra_anjum_vacation_house/vacation house_01.jpg"
-                      alt="Landscape Integration of a Dwelling Unit: Design of a Vacation House at Cox’s Bazar" />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="projectDetails7.html">Landscape Integration of a Dwelling Unit: Design of a
-                      Vacation House at Cox’s Bazar</a>
-                  </h3>
-                  <p>
-                    This project served as a warm-up exercise for us as we
-                    learned about various tree and plant species. The
-                    background and location are made up, but the analysis is
-                    accurate.
-                  </p>
-                  <div class="p-visit-link">
-                    <a href="projectDetails7.html" class="project-visit-link">Visit
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
+                  <li class="header-list show-sub-item">
+                    <a href="javascript:void(0)"
+                      >Learn <i class="fa-solid fa-caret-down"></i
+                    ></a>
+                    <ul class="sub-had-item">
+                      <li class="sub-had-list">
+                        <a href="#">Join Live Sessions</a>
+                      </li>
+                      <li class="sub-had-list">
+                        <a href="#">Buy Recorded Classes</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-list">
+                    <a href="./competition.html">Competition</a>
+                  </li>
+                  <li class="header-list">
+                    <a href="./fellowship.html">Fellowship</a>
+                  </li>
+                </ul>
               </div>
-
-              <div class="skil-development-single-crous project-box-shado">
-                <div class="s-d-s-c-img">
-                  <a href="projectDetails6.html">
-                    <img src="images/project_page_img/sheet/sheet_011.jpg" alt="Design of An Exhibition Center" />
-                  </a>
-                </div>
-                <div class="s-d-s-c-titleAndDec">
-                  <h3>
-                    <a href="projectDetails6.html">Design of a Traditional Community School</a>
-                  </h3>
-                  <p>
-                    I wanted to pick something from nature. Which can also be
-                    called biomimicry. I have matched the envelope with
-                    turtle. Because the turtle encloses itself in a shell,
-                    which is a kind of envelope. Therefore, the building form
-                    is inspired by a turtle cell.
-                  </p>
-                  <div class="p-visit-link">
-                    <a href="projectDetails6.html" class="project-visit-link">Visit
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
+              <div class="mobile-navbar-btn">
+                <ion-icon
+                  name="menu-outline"
+                  class="mobile-nav-icon h-menu"
+                ></ion-icon>
+                <ion-icon
+                  name="close-outline"
+                  class="mobile-nav-icon h-close"
+                ></ion-icon>
               </div>
-            </div>
-            <div class="view-all">
-              <a href="project.html">
-                View All Project
-                <i class="far fa-arrow-alt-circle-right"></i>
-              </a>
-            </div>
+            </nav>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Project Srction End -->
+      </section>
+    </header>
 
-    <!-- Past Jurors Start -->
-    <section class="expertJurorsSection">
-      <div class="wro">
-        <div class="skil-develo-title">
-          <h2>
-            <a href="#"><span class="s-d-light-text">Expert </span><span class="s-d-bold-text">Jurors
-              </span></a>
-          </h2>
-        </div>
-        <div class="swiper expertJurors">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide expertJurorsBox">
-              <div class="jurorsItem">
-                <div class="jurorsItemImage">
-                  <img class="jurorsItemSingalImage" src="images/home_page _img/pastJurors/01_Md Abu Rayhun Rubel.jpg"
-                    alt="">
+    <!-- Header Section Ende -->
+
+    <main>
+      <!-- Start Top Add Baner Section -->
+      <section class="baner">
+        <div class="wro banerMainContant">
+          <div class="banerLeft">
+            <div class="swiper bookSwip">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/book/img5.jpg" alt="" />
                 </div>
-                <h4>Md Abu Rayhun Rubel</h4>
-              </div>
-            </div>
-            <div class="swiper-slide expertJurorsBox">
-              <div class="jurorsItem">
-                <div class="jurorsItemImage">
-                  <img class="jurorsItemSingalImage" src="images/home_page _img/pastJurors/02_Md Ehsanul Hoque.png"
-                    alt="">
+                <div class="swiper-slide">
+                  <img src="./images/book/Big_Java-Cay.jpg" alt="" />
                 </div>
-                <h4>Md Ehsanul Hoque</h4>
-              </div>
-            </div>
-            <div class="swiper-slide expertJurorsBox">
-              <div class="jurorsItem">
-                <div class="jurorsItemImage">
-                  <img class="jurorsItemSingalImage" src="images/home_page _img/pastJurors/03_Md Ammar Yasir.png"
-                    alt="Md Ammar Yasir.png">
+                <div class="swiper-slide">
+                  <img src="./images/book/img3.jpeg" alt="" />
                 </div>
-                <h4>Md Ammar Yasir.png</h4>
-              </div>
-            </div>
-            <div class="swiper-slide expertJurorsBox">
-              <div class="jurorsItem">
-                <div class="jurorsItemImage">
-                  <img class="jurorsItemSingalImage" src="images/home_page _img/pastJurors//04_Sufian Reza.png"
-                    alt="Sufian Reza">
+                <div class="swiper-slide">
+                  <img src="./images/book/img4.jpg" alt="" />
                 </div>
-                <h4>Sufian Reza</h4>
-              </div>
-            </div>
-            <div class="swiper-slide expertJurorsBox">
-              <div class="jurorsItem">
-                <div class="jurorsItemImage">
-                  <img class="jurorsItemSingalImage" src="images/home_page _img/pastJurors/05_Md Nabil Askar Upal.JPG"
-                    alt="Md Nabil Askar Upal">
-                </div>
-                <h4>Md Nabil Askar Upal</h4>
-              </div>
-            </div>
-            <div class="swiper-slide expertJurorsBox">
-              <div class="jurorsItem">
-                <div class="jurorsItemImage">
-                  <img class="jurorsItemSingalImage" src="images/home_page _img/pastJurors/06_Md Hashinur Reza.jpg"
-                    alt="Md Hashinur Reza">
-                </div>
-                <h4>Md Hashinur Reza</h4>
-              </div>
-            </div>
-            <div class="swiper-slide expertJurorsBox">
-              <div class="jurorsItem">
-                <div class="jurorsItemImage">
-                  <img class="jurorsItemSingalImage" src="images/home_page _img/pastJurors/07_Md Nasim Zaman.jpg"
-                    alt="Md Nasim Zaman">
-                </div>
-                <h4>Md Nasim Zaman</h4>
               </div>
             </div>
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="banerCenter">
+            <h1>Book Name</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              debitis iste impedit rerum facere maxime beatae consectetur
+              dolorem, mollitia dicta et accusamus sapiente ipsa illo ullam!
+              Quos reprehenderit ducimus fugiat corrupti neque esse quidem,
+              perferendis amet totam error ad cumque animi consequuntur itaque
+              harum repudiandae accusamus incidunt iste a doloremque!
+            </p>
+            <a href="#" class="banerRight-buy-btn mohi32"
+              ><span>Buy Now</span> <i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </div>
+          <div class="banerRight">
+            <img src="images/home_page _img/ArchDune-logo04.png" />
+            <a href="#" class="banerRight-buy-btn"
+              ><span>Buy Now</span> <i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Past Jurors Emd -->
-  </main>
+      <!-- End Top Add Baner Section -->
 
-  <!-- Footer Section Start -->
+      <!-- Top Baner Section Stast -->
+      <section>
+        <!-- <div class="wro"> -->
+        <div class="top-baner-section">
+          <div class="top-baner">
+            <img src="./images/home_page _img/ArchDune-bg-baner.jpg" alt />
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+      <!-- Top Baner Section End -->
 
-  <footer id="footer-section">
-    <div class="wro">
-      <div class="cointainers">
-        <div class="footer-all-the-items">
-          <div class="fo-leftsit-item">
-            <div class="a-s-i-container">
-              <div class="l-s-i-head">
+      <!-- Skill Development Courses Stast -->
+      <section>
+        <div class="wro">
+          <div class="skil-development-section-container">
+            <div class="skil-development-section">
+              <div class="skil-develo-title">
+                <h2>
+                  <a href="#"
+                    ><span class="s-d-light-text">Our </span
+                    ><span class="s-d-bold-text">Skill Development </span
+                    ><span class="s-d-light-text">Courses</span></a
+                  >
+                </h2>
+              </div>
+              <div class="skil-development-all-single-crouse">
+                <div class="skil-development-single-crous">
+                  <div class="s-d-s-c-img">
+                    <a href="#">
+                      <img
+                        src="./images/home_page _img/skill/blender_300x200.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="#">Beginner’s Guide to Blender </a>
+                    </h3>
+                    <p>
+                      This carefully structured course will include the
+                      fundamentals of Blender 3.2 along with tips and tricks
+                      learned through years of experience.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="skil-development-single-crous">
+                  <div class="s-d-s-c-img">
+                    <a href="#">
+                      <img
+                        src="./images/home_page _img/skill/revit_300x200.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="#">Introduction to BIM | Autodesk Revit</a>
+                    </h3>
+                    <p>
+                      This course will teach you how to use Autodesk Revit in an
+                      easy and straightforward manner. Also discussed is how
+                      Autodesk Revit can be used to model shapes, structures,
+                      and systems in 3D with parametric accuracy, precision, and
+                      ease, as well as documentation work, including quick
+                      modifications to plans, elevations, schedules, and
+                      sections as projects evolve.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="skil-development-single-crous">
+                  <div class="s-d-s-c-img">
+                    <a href="#">
+                      <img
+                        src="./images/home_page _img/skill/photoshop_300x200.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="#"
+                        >Photoshop Essentials for Architectural Visualization</a
+                      >
+                    </h3>
+                    <p>
+                      This course is aimed to help you understand how you can
+                      use only photoshop to produce presentable drawings from
+                      generic 3D scene or hand drawings.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="skil-development-single-crous">
+                  <div class="s-d-s-c-img">
+                    <a href="#">
+                      <img
+                        src="./images/home_page _img/skill/lumion_300x200.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="#"
+                        >Lumion Essentials: Introduction to Architectural
+                        Rendering</a
+                      >
+                    </h3>
+                    <p>
+                      This course is designed to give a kickstarter to Lumion
+                      basics to help participants create a fluent relationship
+                      with rendering workflow. It will also guide participants
+                      to create their desired rendering style and atmosphere
+                      within the shortest possible time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="view-all">
                 <a href="#">
-                  <h2>ArchDune</h2>
+                  View All Courses
+                  <i class="far fa-arrow-alt-circle-right"></i>
                 </a>
               </div>
-              <!-- <div class="l-si-from">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skill Development Courses End -->
+
+      <!-- Project Srction Start -->
+      <section>
+        <div class="wro">
+          <div class="skil-development-section-container">
+            <div class="skil-development-section Our-Projects">
+              <div class="skil-develo-title">
+                <h2>
+                  <a href="#"><span class="s-d-bold-text">Projects</span></a>
+                </h2>
+              </div>
+              <div class="skil-development-all-single-crouse">
+                <div class="skil-development-single-crous project-box-shado">
+                  <div class="s-d-s-c-img">
+                    <a href="projectDetails9.html">
+                      <img
+                        src="images/project_page_img/TanbirHasan/01_ cover photo.jpg"
+                        alt="A Vernacular Architectural Learning Centrer"
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="projectDetails9.html"
+                        >A Vernacular Architectural Learning Centre</a
+                      >
+                    </h3>
+                    <p>
+                      Vernacular architecture holds a unique and captivating
+                      beauty that emerges from its deep connection to local
+                      cultures, landscapes and traditions. Dinajpur district is
+                      situated in the north of Bangladesh.
+                    </p>
+                    <div class="p-visit-link">
+                      <a href="projectDetails9.html" class="project-visit-link"
+                        >Visit
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skil-development-single-crous project-box-shado">
+                  <div class="s-d-s-c-img">
+                    <a href="projectDetails8.html">
+                      <img
+                        src="images/project_page_img/FarhanaHaque/Farhana Haque_01.jpg"
+                        alt="Paramount Concord"
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="projectDetails8.html"
+                        >Design of A Commercial High-rise Building</a
+                      >
+                    </h3>
+                    <p>
+                      This project pertains to the design of a commercial
+                      high-rise building, which is a multi-story building that
+                      is tall enough to require mechanical vertical
+                      transportation, such as elevators.
+                    </p>
+                    <div class="p-visit-link">
+                      <a href="projectDetails8.html" class="project-visit-link"
+                        >Visit
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skil-development-single-crous project-box-shado">
+                  <div class="s-d-s-c-img">
+                    <a href="projectDetails7.html">
+                      <img
+                        src="images/project_page_img/afra_anjum_vacation_house/vacation house_01.jpg"
+                        alt="Landscape Integration of a Dwelling Unit: Design of a Vacation House at Cox’s Bazar"
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="projectDetails7.html"
+                        >Landscape Integration of a Dwelling Unit: Design of a
+                        Vacation House at Cox’s Bazar</a
+                      >
+                    </h3>
+                    <p>
+                      This project served as a warm-up exercise for us as we
+                      learned about various tree and plant species. The
+                      background and location are made up, but the analysis is
+                      accurate.
+                    </p>
+                    <div class="p-visit-link">
+                      <a href="projectDetails7.html" class="project-visit-link"
+                        >Visit
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skil-development-single-crous project-box-shado">
+                  <div class="s-d-s-c-img">
+                    <a href="projectDetails6.html">
+                      <img
+                        src="images/project_page_img/sheet/sheet_011.jpg"
+                        alt="Design of An Exhibition Center"
+                      />
+                    </a>
+                  </div>
+                  <div class="s-d-s-c-titleAndDec">
+                    <h3>
+                      <a href="projectDetails6.html"
+                        >Design of a Traditional Community School</a
+                      >
+                    </h3>
+                    <p>
+                      I wanted to pick something from nature. Which can also be
+                      called biomimicry. I have matched the envelope with
+                      turtle. Because the turtle encloses itself in a shell,
+                      which is a kind of envelope. Therefore, the building form
+                      is inspired by a turtle cell.
+                    </p>
+                    <div class="p-visit-link">
+                      <a href="projectDetails6.html" class="project-visit-link"
+                        >Visit
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="view-all">
+                <a href="project.html">
+                  View All Project
+                  <i class="far fa-arrow-alt-circle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project Srction End -->
+
+      <!-- Past Jurors Start -->
+      <section class="expertJurorsSection">
+        <div class="wro">
+          <div class="skil-develo-title">
+            <h2>
+              <a href="#"
+                ><span class="s-d-light-text">Expert </span
+                ><span class="s-d-bold-text">Jurors </span></a
+              >
+            </h2>
+          </div>
+          <div class="swiper expertJurors">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide expertJurorsBox">
+                <div class="jurorsItem">
+                  <div class="jurorsItemImage">
+                    <img
+                      class="jurorsItemSingalImage"
+                      src="images/home_page _img/pastJurors/01_Md Abu Rayhun Rubel.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Md Abu Rayhun Rubel</h4>
+                </div>
+              </div>
+              <div class="swiper-slide expertJurorsBox">
+                <div class="jurorsItem">
+                  <div class="jurorsItemImage">
+                    <img
+                      class="jurorsItemSingalImage"
+                      src="images/home_page _img/pastJurors/02_Md Ehsanul Hoque.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Md Ehsanul Hoque</h4>
+                </div>
+              </div>
+              <div class="swiper-slide expertJurorsBox">
+                <div class="jurorsItem">
+                  <div class="jurorsItemImage">
+                    <img
+                      class="jurorsItemSingalImage"
+                      src="images/home_page _img/pastJurors/03_Md Ammar Yasir.png"
+                      alt="Md Ammar Yasir.png"
+                    />
+                  </div>
+                  <h4>Md Ammar Yasir.png</h4>
+                </div>
+              </div>
+              <div class="swiper-slide expertJurorsBox">
+                <div class="jurorsItem">
+                  <div class="jurorsItemImage">
+                    <img
+                      class="jurorsItemSingalImage"
+                      src="images/home_page _img/pastJurors//04_Sufian Reza.png"
+                      alt="Sufian Reza"
+                    />
+                  </div>
+                  <h4>Sufian Reza</h4>
+                </div>
+              </div>
+              <div class="swiper-slide expertJurorsBox">
+                <div class="jurorsItem">
+                  <div class="jurorsItemImage">
+                    <img
+                      class="jurorsItemSingalImage"
+                      src="images/home_page _img/pastJurors/05_Md Nabil Askar Upal.JPG"
+                      alt="Md Nabil Askar Upal"
+                    />
+                  </div>
+                  <h4>Md Nabil Askar Upal</h4>
+                </div>
+              </div>
+              <div class="swiper-slide expertJurorsBox">
+                <div class="jurorsItem">
+                  <div class="jurorsItemImage">
+                    <img
+                      class="jurorsItemSingalImage"
+                      src="images/home_page _img/pastJurors/06_Md Hashinur Reza.jpg"
+                      alt="Md Hashinur Reza"
+                    />
+                  </div>
+                  <h4>Md Hashinur Reza</h4>
+                </div>
+              </div>
+              <div class="swiper-slide expertJurorsBox">
+                <div class="jurorsItem">
+                  <div class="jurorsItemImage">
+                    <img
+                      class="jurorsItemSingalImage"
+                      src="images/home_page _img/pastJurors/07_Md Nasim Zaman.jpg"
+                      alt="Md Nasim Zaman"
+                    />
+                  </div>
+                  <h4>Md Nasim Zaman</h4>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Past Jurors Emd -->
+    </main>
+
+    <!-- Footer Section Start -->
+
+    <footer id="footer-section">
+      <div class="wro">
+        <div class="cointainers">
+          <div class="footer-all-the-items">
+            <div class="fo-leftsit-item">
+              <div class="a-s-i-container">
+                <div class="l-s-i-head">
+                  <a href="#">
+                    <h2>ArchDune</h2>
+                  </a>
+                </div>
+                <!-- <div class="l-si-from">
                                 <form action="#">
                                     <input type="text" placeholder="Name" required />
                                     <input type="email" placeholder="Email" required />
@@ -543,146 +696,175 @@
                                     </div>
                                 </form>
                             </div> -->
+              </div>
+            </div>
+            <div class="fo-center-item">
+              <div class="a-s-i-container">
+                <p>Hello and welcome to the ArchDune.</p>
+                <p class="c-para-text-aline">
+                  ArchDune is an initiative which is dedicated to promoting the
+                  innovative thoughts of emerging design enthusiasts. Our goal
+                  is to help aspiring architects by connecting them with
+                  professionals and seasoned graduates.
+                </p>
+                <p class="c-para-text-aline">
+                  We introduce requisite programmes to engage and inspire
+                  ambitious architects as well as undergrads from across the
+                  world. Every design is selected through a process based on
+                  some categories. The projects are praised for their
+                  originality and the unparalleled, vivid imagination behind it.
+                  We look forward to emphasizing the architect's fundamental
+                  beliefs including the laborious journey of transforming a
+                  vision into reality. Our aim is to raise a platform for
+                  promising architects so they can spread their ingenious ideas
+                  being our companion.
+                </p>
+                <p>contact@archdune.com || +880 1716-728989</p>
+                <p>
+                  <span class="lighi-colla"
+                    >Collaboration and Advertisement:</span
+                  >
+                  <span class="bold-gmail">contact@archdune.com</span>
+                </p>
+              </div>
+            </div>
+            <div class="fo-rightsit-item">
+              <div class="a-s-i-container">
+                <ul>
+                  <li><a href="#">Competition</a></li>
+                  <li><a href="#">Skill Development Courses</a></li>
+                  <li><a href="#">Fellowship Program</a></li>
+                  <li><a href="#">Publication</a></li>
+                  <li><a href="./submit.html"> Submit</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="./condition.html">Terms and Conditions</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="fo-center-item">
-            <div class="a-s-i-container">
-              <p>Hello and welcome to the ArchDune.</p>
-              <p class="c-para-text-aline">
-                ArchDune is an initiative which is dedicated to promoting the
-                innovative thoughts of emerging design enthusiasts. Our goal
-                is to help aspiring architects by connecting them with
-                professionals and seasoned graduates.
-              </p>
-              <p class="c-para-text-aline">
-                We introduce requisite programmes to engage and inspire
-                ambitious architects as well as undergrads from across the
-                world. Every design is selected through a process based on
-                some categories. The projects are praised for their
-                originality and the unparalleled, vivid imagination behind it.
-                We look forward to emphasizing the architect's fundamental
-                beliefs including the laborious journey of transforming a
-                vision into reality. Our aim is to raise a platform for
-                promising architects so they can spread their ingenious ideas
-                being our companion.
-              </p>
-              <p>contact@archdune.com || +880 1716-728989</p>
-              <p>
-                <span class="lighi-colla">Collaboration and Advertisement:</span>
-                <span class="bold-gmail">contact@archdune.com</span>
-              </p>
-            </div>
-          </div>
-          <div class="fo-rightsit-item">
-            <div class="a-s-i-container">
-              <ul>
-                <li><a href="#">Competition</a></li>
-                <li><a href="#">Skill Development Courses</a></li>
-                <li><a href="#">Fellowship Program</a></li>
-                <li><a href="#">Publication</a></li>
-                <li><a href="./submit.html"> Submit</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="./condition.html">Terms and Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="copyrightSection">
-          <div class="all-items-copyrightSectios">
-            <div class="all-links">
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/archdunebd"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.com/archdune/_saved/"><i class="fa-brands fa-pinterest"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/channel/UCSBBpXohQUh-jZzgnT9U-fg"><i
-                      class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/archdune/"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyrightMessag">
-              <h4>
-                <span class="c-light">Copyright ©2022-2023</span>
-                <span class="c-bold">ArchDune.</span>
-              </h4>
+          <div class="copyrightSection">
+            <div class="all-items-copyrightSectios">
+              <div class="all-links">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/archdunebd"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-brands fa-square-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.pinterest.com/archdune/_saved/"
+                      ><i class="fa-brands fa-pinterest"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCSBBpXohQUh-jZzgnT9U-fg"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/archdune/"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="copyrightMessag">
+                <h4>
+                  <span class="c-light">Copyright ©2022-2023</span>
+                  <span class="c-bold">ArchDune.</span>
+                </h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Footer Section End -->
+    <!-- Footer Section End -->
 
-  <!------- end footer Section ------->
+    <!------- end footer Section ------->
 
-  <!-- #page -->
+    <!-- #page -->
 
-  <script src="js/home/swiper-bundle.min.js"></script>
+    <script src="js/home/swiper-bundle.min.js"></script>
 
-  <script>
-    var swiper = new Swiper(".bookSwip", {
-      effect: "cards",
-      grabCursor: true,
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".expertJurors", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        540: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+    <script>
+      var swiper = new Swiper(".bookSwip", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".expertJurors", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
         },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 50,
+        breakpoints: {
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
         },
-      },
-    });
-  </script>
+      });
+    </script>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-  <script src="./script.js"></script>
-  <script src="./script/home/nave.js"></script>
+    <script src="./script.js"></script>
+    <script src="./script/home/nave.js"></script>
 
-  <!-- Frem -->
-  <script id="jquery-core-js" src="./js/frems/jquery.min.js"></script>
-  <script src="./js/frems/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+    <!-- Frem -->
+    <script id="jquery-core-js" src="./js/frems/jquery.min.js"></script>
+    <script
+      src="./js/frems/webpack.runtime.min.js"
+      id="elementor-webpack-runtime-js"
+    ></script>
 
-  <script src="./js/frems/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
-  <script src="./js/frems/swiper.min.js" id="swiper-js"></script>
-  <script src="./js/frems/frontend.min.js" id="elementor-frontend-js"></script>
+    <script
+      src="./js/frems/frontend-modules.min.js"
+      id="elementor-frontend-modules-js"
+    ></script>
+    <script src="./js/frems/swiper.min.js" id="swiper-js"></script>
+    <script
+      src="./js/frems/frontend.min.js"
+      id="elementor-frontend-js"
+    ></script>
 
-  <script src="./js/frems/preloaded-modules.min.js" id="preloaded-modules-js"></script>
-</body>
-
+    <script
+      src="./js/frems/preloaded-modules.min.js"
+      id="preloaded-modules-js"
+    ></script>
+  </body>
 </html>
