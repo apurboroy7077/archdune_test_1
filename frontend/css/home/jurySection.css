@@ -1,9 +1,10 @@
 .jury-section {
-  margin: 5rem 0rem;
+  margin: 2rem 0rem;
 }
 .jury-section .title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.7rem;
+  margin: 1.7rem 0rem;
 }
 .jury-section .title .expert-text {
   opacity: 0.7;
@@ -11,6 +12,43 @@
 .jury-section .title .jury-panel-text {
   font-weight: 600;
 }
-.jury-card-container {
-  display: flex;
+.jury-card-container-parent {
+  max-width: 60%;
+}
+.jury-image-div {
+  border-radius: 100%;
+  overflow: hidden;
+}
+.jury-image-div img {
+  transition: all 0.5s ease;
+  filter: grayscale(100%);
+}
+.jury-image-div img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.jury-name-div {
+  margin-top: 1rem;
+}
+.jury-university-div {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 768px) {
+  .jury-section {
+    margin: 3rem 0rem;
+  }
+  .jury-section .title {
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .jury-section {
+    margin: 5rem 0rem;
+  }
+  .jury-section .title {
+    font-size: 2.7rem;
+    margin-bottom: 4rem;
+  }
 }
