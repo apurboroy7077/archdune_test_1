@@ -13,24 +13,36 @@
   flex-direction: column;
   gap: 1rem;
 }
-
+.fellowship-social-media-div button {
+  text-align: center;
+  padding: 0.7rem 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.fellowship-social-media-div button:hover {
+  filter: grayscale(0%);
+}
+.fellowship-social-media-div button:active {
+  transform: scale(0.95);
+}
 .fellowship-social-media-div .facebook {
   color: white;
-  text-align: center;
   background-color: #3c5898;
-  padding: 0.7rem 2rem;
 }
 .fellowship-social-media-div .twitter {
   color: white;
-  text-align: center;
   background-color: #1ca2f1;
-  padding: 0.7rem 2rem;
 }
 .fellowship-social-media-div .youtube {
   color: white;
-  text-align: center;
   background-color: #ff0000;
-  padding: 0.7rem 2rem;
+}
+.fellowship-social-media-div .pinterest {
+  color: white;
+  background-color: #b7081b;
 }
 .fellowship-social-media-div .icon {
   font-size: 1.7rem;
@@ -51,24 +63,8 @@
     justify-content: space-between;
     /* width: full; */
   }
-  .fellowship-social-media-div .facebook {
-    color: white;
+  .fellowship-social-media-div button {
     text-align: center;
-    background-color: #3c5898;
-    padding: 0.7rem 2rem;
-    width: 33%;
-  }
-  .fellowship-social-media-div .twitter {
-    color: white;
-    text-align: center;
-    background-color: #1ca2f1;
-    padding: 0.7rem 2rem;
-    width: 30%;
-  }
-  .fellowship-social-media-div .youtube {
-    color: white;
-    text-align: center;
-    background-color: #ff0000;
     padding: 0.7rem 2rem;
     width: 33%;
   }
