@@ -1,6 +1,12 @@
 * {
   text-decoration: none;
 }
+
+/* Apurbo Roy */
+.project-menu-list-hr {
+  border-top: 0.5px solid rgb(235, 230, 230);
+  margin-top: 0.6rem;
+}
 .project_page_show_more_and_less_button_div {
   display: none;
 }
@@ -77,7 +83,8 @@
   color: #f86d1c;
 }
 
-.left-project-link ul {
+.project-menu-list-highlighted,
+.project-menu-list {
   margin: 0;
   padding: 0;
   margin-top: 10px;
@@ -97,9 +104,16 @@
   line-height: 18px;
 }
 
-.left-project-link ul li a {
+.project-menu-list li a {
   color: #337ab7;
   font-size: 12px;
+  transition: all 0.2s;
+}
+/* .project-menu-list-highlighted li {
+} */
+.project-menu-list-highlighted li a {
+  color: #337ab7;
+  font-size: 13.5px;
   transition: all 0.2s;
 }
 
@@ -428,7 +442,6 @@ img {
     height: 93vh;
     /* background-color: #305270; */
     position: static;
-
     overflow: scroll;
     z-index: 3;
     background-color: white;
@@ -436,9 +449,21 @@ img {
   .project-name-title {
     margin-bottom: -10px;
   }
+  .project-menu-list-highlighted {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-wrap: nowrap;
+  }
+  .project-menu-list-highlighted li {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 7px;
+  }
   .project-menu-list {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap: 1rem;
     text-wrap: nowrap;
   }

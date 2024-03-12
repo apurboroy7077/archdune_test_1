@@ -1,7 +1,4 @@
 let DataOfLinkLists = [
-  { href: "./studentWorksProject.html", name: "Student works" },
-  { href: "#", name: "Illustration" },
-  { href: "./photography.html", name: "Photography" },
   { href: "#", name: "Administrative" },
   { href: "#", name: "Articles" },
   { href: "#", name: "Cultural" },

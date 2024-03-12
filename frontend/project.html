@@ -186,7 +186,16 @@
             <div class="left-project-link">
               <!--  Something is wrong with left-project-link class-->
               <h4 class="project-name-title"><a href="#">PROJECT</a></h4>
-              <ul class="project-menu-list"></ul>
+              <ul class="project-menu-list-highlighted">
+                <!-- Highlighted Lists will be rendered here with javascript -->
+              </ul>
+
+              <div class="project-menu-list-hr">
+                <!-- This div is used as a horizontal Row -->
+              </div>
+              <ul class="project-menu-list">
+                <!-- Project Lists will Be rendered Here with javascript -->
+              </ul>
               <div class="project_page_show_more_and_less_button_div">
                 <button class="show_more_button_project_page">Show More</button>
                 <button class="show_less_button_project_page">Show Less</button>
@@ -1004,6 +1013,7 @@
 
     <script src="./script.js"></script>
     <script src="./script/home/nave.js"></script>
+    <script src="./js/project_page/highlightedList.js" type="module"></script>
     <script src="./js/project_page/link_list.js" type="module"></script>
   </body>
 </html>
