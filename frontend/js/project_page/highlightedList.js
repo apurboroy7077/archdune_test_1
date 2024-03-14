@@ -1,5 +1,8 @@
-import DataOfHighlightedLinkLists from "../../data/highlightedLinkListData.js";
-
+let DataOfHighlightedLinkLists = [
+  { href: "./studentWorksProject.html", name: "Student works" },
+  { href: "#", name: "Illustration" },
+  { href: "./photography.html", name: "Photography" },
+];
 let linkListDiv = document.getElementsByClassName(
   "project-menu-list-highlighted"
 )[0];
@@ -13,7 +16,5 @@ let showHighlightedList = () => {
     totalListCode = totalListCode + singleListCode;
   }
   linkListDiv.innerHTML = totalListCode;
-  showMoreButton.style.display = "none";
-  showLessButton.style.display = "block";
 };
 showHighlightedList();
