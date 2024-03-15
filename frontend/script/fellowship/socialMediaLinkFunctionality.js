@@ -14,6 +14,7 @@ facebookButton.addEventListener("click", () => {
   window.open("https://facebook.com", "_blank");
 });
 twitterButton.addEventListener("click", () => {
+  console.log("twitter");
   window.open("https://twitter.com", "_blank");
 });
 youtubeButton.addEventListener("click", () => {
