@@ -529,8 +529,6 @@ fieldset ul li textarea {
   margin-bottom: 30px;
 }
 
-
-
 @media screen and (max-width: 900px) {
   .lead {
     margin: 3% 2.5%;
@@ -549,8 +547,6 @@ fieldset ul li textarea {
   }
 }
 
-
-
 @media screen and (max-width: 1025px) {
   .compusRightWrapper h4 {
     font-size: 2rem;
@@ -561,19 +557,19 @@ fieldset ul li textarea {
     max-width: 370px;
     max-height: auto;
     border-right: none;
-}
-.compusRight {
-  height: 590px;
-}
-.compusRightWrapper p{
-  font-size: 18px;
-}
-.compusRightWrapper h5{
-  font-size: 18px;
-}
-.compusRightWrapper h4 {
-  font-size: 2rem;
-}
+  }
+  .compusRight {
+    height: 590px;
+  }
+  .compusRightWrapper p {
+    font-size: 18px;
+  }
+  .compusRightWrapper h5 {
+    font-size: 18px;
+  }
+  .compusRightWrapper h4 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 1515px) {
@@ -591,6 +587,12 @@ fieldset ul li textarea {
   }
 }
 @media screen and (max-width: 800px) {
+  .eligibilityLeft img {
+    max-width: 100%;
+  }
+  .benefitsRight img {
+    max-width: 100%;
+  }
   .lead {
     margin: 3% 2.5%;
   }
@@ -605,8 +607,8 @@ fieldset ul li textarea {
   .compusLeftApplyWrapper .desc {
     padding-left: 40px;
   }
-  
-  .compusRightWrapper{
+
+  .compusRightWrapper {
     position: absolute;
     right: none;
     left: 0;
@@ -614,17 +616,17 @@ fieldset ul li textarea {
   }
   .compusRight {
     height: 350px;
-}
-.fellowTitle.b4eligibility {
-  margin-bottom: 10px;
-}
-.eligibilityLeftAndRight {
-  display: block;
-}
+  }
+  .fellowTitle.b4eligibility {
+    margin-bottom: 10px;
+  }
+  .eligibilityLeftAndRight {
+    display: block;
+  }
 
-.benefitsLeftAndRight {
-  display: block;
-}
+  .benefitsLeftAndRight {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 666px) {
@@ -635,62 +637,62 @@ fieldset ul li textarea {
     display: block;
     grid-template-columns: auto;
   }
-  .fellowTitle h3{
+  .fellowTitle h3 {
     font-size: 35px;
   }
-  .benefitsDesc{
+  .benefitsDesc {
     font-size: 13px;
   }
   .enrollmentSingalCard img {
     width: 50px;
     height: auto;
-}
-.enrollmentAllCard {
-  padding: 0 20px;
-}
-.enrollmentSingalCard h4{
-  font-size: 22px;
-}
+  }
+  .enrollmentAllCard {
+    padding: 0 20px;
+  }
+  .enrollmentSingalCard h4 {
+    font-size: 22px;
+  }
 
-.enrollmentSingalCard {
-  margin: 0;
-  padding: 10px;
-  margin-bottom: 15px;
+  .enrollmentSingalCard {
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .responsibilitiesSingalCardInfo {
+    height: auto;
+  }
 }
-.responsibilitiesSingalCardInfo{
-  height: auto;
-}
-}
-@media screen and (max-width: 490px){
+@media screen and (max-width: 490px) {
   .compusLeft {
     display: block;
-}
-.compusLeftApplyWrapper {
-  position: relative;
-  /* right: 0; */
-  bottom: 0;
-  margin-top: 10px;
-}
-.compusLeftImage{
-  width: 100%;
-  height: auto;
-  display: inline;
-}
-.compusLeftApplyWrapper .apply {
-  width: 40%;
-  padding: 10px;
-  margin-bottom: 6px;
-}
-.compusLeftApplyWrapper .desc{
-  width: 100%;
-  padding: 0;
-}
-.compusRightWrapper h4 {
-  font-size: 2rem;
-}
-.fellowTitle h3 {
-  font-size: 25px;
-}
+  }
+  .compusLeftApplyWrapper {
+    position: relative;
+    /* right: 0; */
+    bottom: 0;
+    margin-top: 10px;
+  }
+  .compusLeftImage {
+    width: 100%;
+    height: auto;
+    display: inline;
+  }
+  .compusLeftApplyWrapper .apply {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 6px;
+  }
+  .compusLeftApplyWrapper .desc {
+    width: 100%;
+    padding: 0;
+  }
+  .compusRightWrapper h4 {
+    font-size: 2rem;
+  }
+  .fellowTitle h3 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -699,9 +701,7 @@ fieldset ul li textarea {
   }
 }
 
-
 @media screen and (min-width: 1650px) {
-  
   .compusRight {
     margin-right: 2rem;
   }
