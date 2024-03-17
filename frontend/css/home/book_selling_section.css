@@ -1,0 +1,116 @@
+.book-selling-section {
+  padding: 0rem 0.55rem;
+  margin: 2rem 0rem;
+}
+.book-selling-section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.book-selling-section-title .book-text,
+.book-selling-section .section-text {
+  font-weight: 300;
+  font-family: "Poppins", Sans-serif;
+}
+.book-selling-section-image-div {
+  height: 15rem;
+  overflow: hidden;
+}
+.book-selling-section-image {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  height: 100%;
+  transition: all 0.5s;
+}
+.book-selling-section-image:hover {
+  transform: scale(1.1);
+}
+.book-selling-section-details {
+  margin-top: 2rem;
+}
+.book-selling-section-details .text-1 {
+  text-align: center;
+  margin: 2rem 0rem;
+  font-weight: bold;
+}
+.book-selling-section-check-out-text {
+  font-weight: 300;
+  font-family: "Poppins", Sans-serif;
+}
+.book-selling-section-details-2 {
+  display: grid;
+  gap: 1rem;
+}
+.delivery-option-text,
+.book-details-text {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.delivery-option-details,
+.book-details-details {
+  color: #222222;
+  font-size: 12px;
+  line-height: 16px;
+}
+.book-selling-section-book-details,
+.book-selling-section-delivery-details {
+  padding: 1rem;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+
+.book-selling-section-truck-icon-div,
+.book-selling-section-book-icon-div {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.book-selling-section-warning-text {
+  font-weight: bold;
+
+  margin-top: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  .book-selling-section-image-div {
+    height: 30rem;
+  }
+  .book-selling-section-details-2 {
+    font-size: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .book-selling-section-book-details,
+  .book-selling-section-delivery-details {
+  }
+  .book-selling-section-title {
+    font-size: 2.9rem;
+    margin-bottom: 2rem;
+  }
+  .book-selling-section-details .text-1 {
+    font-size: 1.5rem;
+  }
+  .delivery-option-text,
+  .book-details-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .delivery-option-details,
+  .book-details-details {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 1024px) {
+  .book-selling-section {
+    padding: 0rem 10.5rem;
+    margin: 4rem 0rem;
+  }
+
+  .book-selling-section-image-div {
+    height: 45rem;
+  }
+}

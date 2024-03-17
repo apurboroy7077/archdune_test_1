@@ -1,2 +1,3 @@
 # This will ignore all the Node modules files
 **/node_modules/ 
+/test
