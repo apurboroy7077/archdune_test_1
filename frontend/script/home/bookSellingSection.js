@@ -1,9 +1,9 @@
 let imagesSrc = [
-  "./images/book_section/chashi bari_01.jpeg",
-  "./images/book_section/chashi bari_02.jpeg",
-  "./images/book_section/chashi bari_03.jpeg",
-  "./images/book_section/chashi bari_04.jpeg",
-  "./images/book_section/chashi bari_05.jpeg",
+  "./images/book_section/chashi bari_06.jpeg",
+  "./images/book_section/chashi bari_06.jpeg",
+  "./images/book_section/chashi bari_06.jpeg",
+  "./images/book_section/chashi bari_06.jpeg",
+  "./images/book_section/chashi bari_06.jpeg",
   "./images/book_section/chashi bari_06.jpeg",
 ];
 let sliderDiv = document.getElementsByClassName(
