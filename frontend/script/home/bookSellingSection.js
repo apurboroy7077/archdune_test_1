@@ -14,11 +14,11 @@ let loadImagesInDiv = () => {
   for (let i = 0; i < imagesSrc.length; i++) {
     let imageSrc = imagesSrc[i];
     let singleCode = ` <div class="swiper-slide ">
-    <div style="width:100%; overflow:hidden; border-radius:5px">
+    <div style="width:100%; overflow:hidden; border-radius:5px; display:flex; align-items:center; justify-content:center;">
     <img
       src="${imageSrc}"
-      class="hover-scale-1-1 transition-0-5s-ease"
-      style="width:100%"
+      class="hover-scale-1-1 transition-0-5s-ease w-full lg-width-70"
+      style=""
     />
     </div>
     
