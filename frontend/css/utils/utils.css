@@ -43,4 +43,10 @@
   .lg-width-70 {
     width: 70% !important;
   }
+  .lg-max-w-80 {
+    max-width: 80%;
+  }
+  .lg-max-w-90 {
+    max-width: 90%;
+  }
 }
