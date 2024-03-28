@@ -1,3 +1,20 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-11px {
+  font-size: 11px;
+}
+.px-1rem {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-1rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.text-nowrap {
+  text-wrap: nowrap;
+}
 .max-w-full {
   max-width: 100%;
 }
@@ -34,9 +51,173 @@
 .w-full {
   width: 100%;
 }
+.text-1rem {
+  font-size: 1rem;
+}
+.my-1rem {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.grid {
+  display: grid;
+}
+.black-and-white {
+  filter: grayscale(100%);
+}
+.hover-colorful:hover {
+  filter: grayscale(0%);
+}
+/* ----------------------------------------- */
+.m-auto {
+  margin: 0 auto;
+}
+.max-w-1125px {
+  max-width: 1125px;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.color-singapore-title {
+  color: rgba(104, 99, 94);
+}
+.max-w-40rem {
+  max-width: 40rem;
+}
+.text-13px {
+  font-size: 13px;
+}
+.px-0-2rem {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.line-height-16px {
+  line-height: 16px;
+}
+.font-size-13px {
+  font-size: 13px;
+}
+.m-top-1rem {
+  margin-top: 1rem;
+}
+.gap-0-5rem {
+  gap: 0.5rem;
+}
+.w-2rem {
+  width: 2rem;
+}
+.facebook-border {
+  border: 2px solid #039be5;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.p-2px {
+  padding: 2px;
+}
+.twitter-border {
+  border: 2px solid #03a9f4;
+}
+.linkedin-border {
+  border: 2px solid #0288d1;
+}
+.pinterest-border {
+  border: 2px solid #e60023;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.gap-2rem {
+  gap: 2rem;
+}
+.font-size-19px {
+  font-size: 19px;
+}
+.line-height-27px {
+  line-height: 27px;
+}
+.my-5px {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.line-height-12px {
+  line-height: 12px;
+}
+.village-festival-color {
+  color: rgb(170, 170, 170);
+}
+.w-1-5rem {
+  width: 1.5rem;
+}
+.tessa-dadley-color {
+  color: rgb(77, 77, 77);
+}
+.line-height-20px {
+  line-height: 20px;
+}
+.read-more-color {
+  color: rgb(229, 119, 63);
+}
+.line-height-18px {
+  line-height: 18px;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.my-13px {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.m-top-2rem {
+  margin-top: 2rem;
+}
+.py-0-3rem {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.w-0-8rem {
+  width: 0.8rem;
+}
+.link-color {
+  color: #cc9c76;
+}
+.font-size-12px {
+  font-size: 12px;
+}
+.transition-all-0-5s {
+  transition: all 0.5s ease-in-out;
+}
 @media (min-width: 768px) {
+  .md-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .md-mt-2rem {
     margin-top: 2rem;
+  }
+  .md-text-61px {
+    font-size: 61px;
+  }
+  .md-text-2-2rem {
+    font-size: 2.2rem;
+  }
+  .md-text-15px {
+    font-size: 15px;
+  }
+  .md-my-1-7rem {
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+  .md-my-2rem {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 1024px) {

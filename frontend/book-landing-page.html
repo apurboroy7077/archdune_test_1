@@ -62,23 +62,19 @@
     <link rel="stylesheet" href="./css/home/jurySection.css" />
     <link rel="stylesheet" href="./css/home/book_selling_section.css" />
     <link rel="stylesheet" href="./css/utils/utils.css" />
-    <!-- <script
-      src="./script/home/jurySectionScripts.js"
-      type="module"
-      defer
-    ></script> -->
+    <link rel="stylesheet" href="./css/lightgallery/lightgallery.css" />
+
     <script src="./script/home/bookSellingSection.js" defer></script>
     <script src="./script/swiper/swiper-bundle.min.js" defer></script>
-    <!-- <script
-      src="./script/home/bookSellingSectionSwiperScripts.js"
-      defer
-    ></script> -->
+
     <script
       src="https://kit.fontawesome.com/6916afa30b.js"
       crossorigin="anonymous"
       defer
     ></script>
     <script src="./script/home/swiper-coverflow-scripts.js" defer></script>
+    <script src="./script/lightgallery/lightgallery.js" defer></script>
+    <script src="./script/lightgallery/script1.js" type="module" defer></script>
   </head>
 
   <body>
@@ -444,35 +440,6 @@
         grabCursor: true,
       });
     </script>
-    <script>
-      var swiper = new Swiper(".expertJurors", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          540: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 15,
-          },
-        },
-      });
-    </script>
 
     <script
       type="module"
@@ -507,5 +474,13 @@
       src="./js/frems/preloaded-modules.min.js"
       id="preloaded-modules-js"
     ></script>
+    <script>
+      // const lightgallery = require("./lightgallery");
+
+      // let gallery = document.getElementById("gallery");
+      // lightGallery(gallery, {
+      //   controls: false,
+      // });
+    </script>
   </body>
 </html>
