@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Aktiv-Grotesk-W06-Light;
+  src: url(../font/Aktiv-Grotesk-W06-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: Aktiv-Grotesk-W06-Regular;
+  src: url(../font/Aktiv-Grotesk-W06-Regular.ttf) format("truetype");
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -213,6 +221,21 @@
 }
 .hidden {
   display: none;
+}
+.aktiv-grotesk-medium {
+  font-family: Aktiv-Grotesk-W01-Medium;
+}
+.aktiv-grotesk-light {
+  font-family: Aktiv-Grotesk-W06-Light;
+}
+.aktiv-grotesk-regular {
+  font-family: Aktiv-Grotesk-W06-Regular;
+}
+.line-height-30px {
+  line-height: 30px;
+}
+.text-wrap {
+  text-wrap: wrap;
 }
 @media (min-width: 768px) {
   .md-grid-cols-2 {
