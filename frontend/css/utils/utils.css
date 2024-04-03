@@ -269,6 +269,12 @@
 .preferred-date-color {
   color: rgb(119, 119, 119);
 }
+.height-24-rem {
+  height: 24rem;
+}
+.active-scale-0-9-5:active {
+  transform: scale(0.95);
+}
 @media (min-width: 768px) {
   .md-text-19px {
     font-size: 19px;
