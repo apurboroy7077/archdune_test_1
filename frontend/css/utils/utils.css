@@ -275,7 +275,29 @@
 .active-scale-0-9-5:active {
   transform: scale(0.95);
 }
+.max-h-fit-content {
+  max-height: fit-content;
+}
+.py-0-1rem {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+.px-0-3rem {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
 @media (min-width: 768px) {
+  .md-py-0-3rem {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+  .md-px-1rem {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .md-w-0-8-rem {
+    width: 0.8rem;
+  }
   .md-text-19px {
     font-size: 19px;
   }
