@@ -313,6 +313,24 @@
   padding-left: 0.7rem;
   padding-right: 0.7rem;
 }
+.p-0-5rem {
+  padding: 0.5rem;
+}
+.h-28rem {
+  height: 28rem;
+}
+.bg-color-project-section-homepage {
+  background-color: #ececec;
+}
+.h-24rem {
+  height: 24rem;
+}
+.h-26rem {
+  height: 26rem;
+}
+.max-h-30rem {
+  max-height: 30rem;
+}
 @media (min-width: 768px) {
   .md-py-0-4-7rem {
     padding-top: 0.47rem;
