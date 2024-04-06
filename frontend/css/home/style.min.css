@@ -50,7 +50,7 @@
   transition: all 0.3s;
 }
 
-.skil-development-single-crous:hover {
+.skil-development-single-crous {
   box-shadow: 1px 1px 5px #94949470, -1px -1px 5px #94949470;
 }
 
