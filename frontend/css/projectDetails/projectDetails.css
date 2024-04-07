@@ -198,7 +198,7 @@
 .c-s-p-i-p-text p,
 .c-s-p-i-p-text td,
 .c-s-p-i-p-text a {
-  font-family: Aktiv-Grotesk-W06-Regular;
+  font-family: aAktiv-Grotesk-W06-Light;
 }
 
 .podt-meta-images-section {
@@ -366,7 +366,7 @@
 }
 
 .c-s-p-i-image-gallery p {
-  font-size: 12.5px;
+  font-size: 13px;
   margin-bottom: 10px;
   text-align: justify;
   line-height: 18px;
