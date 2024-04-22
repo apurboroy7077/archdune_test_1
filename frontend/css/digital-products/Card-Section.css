@@ -1,0 +1,74 @@
+.digital-product-card-image-1 {
+  width: 100%;
+}
+.digital-product-card-text-1 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(46, 50, 52);
+  margin-top: 1rem;
+}
+.digital-product-card-text-2 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(46, 50, 52);
+  margin-top: 0.3rem;
+}
+.digital-product-cards-container {
+  display: grid;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.digital-product-card-image-div {
+  position: relative;
+}
+.digital-product-card-quick-view-button {
+  color: black;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  /* Center horizontally */
+  left: 50%;
+  /* Center vertically */
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shop-editors-pick-button {
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .digital-product-cards-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .digital-product-cards-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

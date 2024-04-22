@@ -1,0 +1,69 @@
+.digital-product-selling-page-hero-section-div {
+  margin: 3rem 0rem;
+  padding: 1.5rem 0.5rem;
+  background-image: url("./../../images/digital-products/toffu-font-headers.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.digital-product-selling-page-hero-section-title-1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+.digital-product-selling-page-hero-section-title-2 {
+  font-weight: 700;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+.digital-product-selling-page-hero-section-title-3 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.digital-product-selling-page-hero-section-button-div {
+  margin: 1rem 0;
+  text-align: center;
+}
+.digital-product-selling-page-hero-section-button-1 {
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+.digital-product-selling-page-hero-section-button-1:active {
+  scale: 0.95;
+}
+@media (min-width: 768px) {
+  .digital-product-selling-page-hero-section-div {
+    padding: 5rem 0rem;
+  }
+  .digital-product-selling-page-hero-section-title-1 {
+  }
+  .digital-product-selling-page-hero-section-title-2 {
+    font-size: 42px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .digital-product-selling-page-hero-section-title-3 {
+    font-size: 18px;
+  }
+  .digital-product-selling-page-hero-section-button-div {
+    margin: 1.7rem 0;
+  }
+  .digital-product-selling-page-hero-section-button-1 {
+    font-size: 15px;
+    padding: 0.8rem 2.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .digital-product-selling-page-hero-section-div {
+    padding: 10rem 0rem;
+  }
+}
