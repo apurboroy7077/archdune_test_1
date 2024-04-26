@@ -1,0 +1,52 @@
+.vegetable-section-div-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.vegetable-section-div-1-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+.vegetable-section-div-1-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.vegetable-section-div-1 img {
+  max-width: 100%;
+  opacity: 0.6;
+}
+.vegetable-section-product-div-indominus-rex {
+  position: relative;
+}
+.vegetable-section-product-price-div-raptor {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+.vegetable-price-trex-1 {
+  font-size: 0.7rem;
+}
+.vegetable-price-trex-2 {
+  font-size: 0.6rem;
+}
+@media (min-width: 768px) {
+  .vegetable-section-div-1-2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .vegetable-price-trex-1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .vegetable-price-trex-2 {
+    font-size: 0.8rem;
+  }
+  .vegetable-section-product-price-div-raptor {
+    bottom: 20px;
+    left: 20px;
+  }
+}

@@ -1,0 +1,70 @@
+.bootcamp-section-main-div {
+  margin-top: 2rem;
+  padding: 1.5rem 0.5rem;
+}
+.bootcamp-section-img-1 {
+  max-width: 100%;
+}
+.student-program-text {
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+  text-align: center;
+}
+.bootcamp-text {
+  font-weight: 700;
+  color: rgb(46, 50, 52);
+  font-size: 23px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.join-the-bootcamp-student-text {
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.free-student-kit-text {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+  margin-top: 0.7rem;
+}
+.bootcamp-section-apply-now-button-div {
+  margin-top: 1rem;
+  text-align: center;
+}
+.bootcamp-section-apply-now-button-div button {
+  background-color: white;
+  outline: none;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+.bootcamp-section-apply-now-button-div button:active {
+  transform: scale(0.95);
+}
+.bootcamp-section-div-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .bootcamp-section-main-div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bootcamp-text {
+    font-size: 32px;
+  }
+  .join-the-bootcamp-student-text {
+    margin-top: 0.7rem;
+  }
+  .bootcamp-section-apply-now-button-div button {
+    padding: 0.5rem 2rem;
+  }
+}
