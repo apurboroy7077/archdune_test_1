@@ -334,7 +334,29 @@
 .h-13rem {
   height: 13rem;
 }
+.title-1 {
+  font-size: 1.7rem;
+  margin: 1.7rem 0rem;
+  font-weight: 300;
+  font-family: "Poppins", Sans-serif;
+}
+.title-2 {
+  font-size: 1.7rem;
+  margin: 1.7rem 0rem;
+  font-weight: 600;
+}
+.jury-section .title .expert-text {
+  font-weight: 300;
+  font-family: "Poppins", Sans-serif;
+}
+.jury-section .title .jury-panel-text {
+  font-weight: 600;
+}
 @media (min-width: 768px) {
+  .title-1,
+  .title-2 {
+    font-size: 2.3rem;
+  }
   .md-h-25rem {
     height: 25rem;
   }
@@ -388,6 +410,10 @@
   }
 }
 @media (min-width: 1024px) {
+  .title-1,
+  .title-2 {
+    font-size: 2.7rem;
+  }
   .lg-h-30rem {
     height: 30rem;
   }
