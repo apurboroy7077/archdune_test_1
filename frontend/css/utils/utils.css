@@ -352,6 +352,14 @@
 .jury-section .title .jury-panel-text {
   font-weight: 600;
 }
+.standard-container {
+  padding: 1rem 0.5rem;
+  background-color: red;
+  max-width: 120rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 @media (min-width: 768px) {
   .title-1,
   .title-2 {
