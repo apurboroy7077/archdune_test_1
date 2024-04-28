@@ -354,8 +354,8 @@
 }
 .standard-container {
   padding: 1rem 0.5rem;
-  background-color: red;
-  max-width: 120rem;
+
+  max-width: 125rem;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
