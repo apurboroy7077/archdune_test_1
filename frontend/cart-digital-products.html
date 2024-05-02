@@ -64,7 +64,6 @@
       rel="stylesheet"
       href="./css/digital-products/Vegetable-Section.css"
     />
-    <link rel="stylesheet" href="./css/utils/utils.css" />
     <link rel="stylesheet" href="./css/digital-products-cart/section-1.css" />
     <link rel="stylesheet" href="./css/utils/tailwind.css" />
     <script
@@ -78,6 +77,11 @@
     <script src="./script/digital-products/card.js" defer></script>
     <script
       src="./script/digital-products/trusted-brands-swiper.js"
+      defer
+    ></script>
+    <script
+      src="./script/digital-products/javascript/cart.js"
+      type="module"
       defer
     ></script>
   </head>
@@ -198,9 +202,220 @@
 
     <main>
       <section>
-        <div class="standard-container py-1 bg-red-500">
-          <div>
-            <div class="digital-products-cart-title-1">Shopping Cart</div>
+        <div class="flex justify-center items-center w-full">
+          <div class="px-5 py-2 my-5 md:my-10 w-full max-w-[110rem]">
+            <div>
+              <div class="md:text-2xl">Shopping Cart</div>
+            </div>
+            <div>
+              <div class="mt-10">
+                <div>
+                  <div
+                    class="hidden md:flex w-full gap-3 text-base text-[#2229]"
+                  >
+                    <div class="min-w-[40%] max-w-[40%]">
+                      <div class="text-center">Product</div>
+                    </div>
+                    <div class="min-w-[20%] max-w-[20%]">
+                      <div class="text-center">Price</div>
+                    </div>
+                    <div class="min-w-[20%] max-w-[20%]">
+                      <div class="text-center">Quantity</div>
+                    </div>
+                    <div class="min-w-[20%] max-w-[20%]">
+                      <div class="text-center">Total</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-products-div">
+                  <div>
+                    <div class="mt-5 md:flex gap-3">
+                      <div class="md:min-w-[40%] md:max-w-[40%]">
+                        <div class="md:flex items-center gap-3">
+                          <div class="">
+                            <div class="flex justify-center items-center">
+                              <img
+                                class="w-[50%] md:w-[10rem]"
+                                src="./images/digital-products/cart-image.avif"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="">
+                            <div
+                              class="text-base text-[#222] font-[400] text-center mt-5 md:mt-0"
+                            >
+                              Cad Shopping Mall Section
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="md:min-w-[20%] md:max-w-[20%]">
+                        <div
+                          class="md:flex md:items-center md:justify-center h-full"
+                        >
+                          <div class="text-center mt-2">
+                            <span class="text-sm text-[#222] line-through"
+                              >$12.00</span
+                            >
+                            <span class="text-sm text-[#222]">$10.80</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="md:min-w-[20%] md:max-w-[20%]">
+                        <div class="md:flex items-center justify-center h-full">
+                          <div>
+                            <div>
+                              <div
+                                class="text-center mt-3 flex items-center justify-center"
+                              >
+                                <button
+                                  class="min-w-[2rem] min-h-[1.5rem] text-sm text-[#222] bg-transparent border-[1px] border-[grey]"
+                                >
+                                  -
+                                </button>
+                                <button
+                                  class="min-w-[2rem] min-h-[1.5rem] text-sm text-[#222] bg-transparent border-[1px] border-[grey]"
+                                >
+                                  5
+                                </button>
+                                <button
+                                  class="min-w-[2rem] min-h-[1.5rem] text-sm text-[#222] bg-transparent border-[1px] border-[grey]"
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="mt-2 text-center">
+                                <button class="text-[grey] text-xs">
+                                  Remove
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="hidden md:block md:min-w-[20%] md:max-w-[20%]"
+                      >
+                        <div
+                          class="md:flex md:flex-col md:items-center md:justify-center h-full"
+                        >
+                          <div class="text-center mt-2">
+                            <span class="text-sm text-[#222] line-through"
+                              >$12.00</span
+                            >
+                            <span class="text-sm text-[#222]">$10.80</span>
+                          </div>
+                          <div>
+                            <div class="text-xs text-[grey]">
+                              Bundle Discount: 10%
+                            </div>
+                          </div>
+                          <div>
+                            <div class="text-xs text-[grey]">(-$1.20)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="mt-5 md:flex gap-3">
+                      <div class="md:min-w-[40%] md:max-w-[40%]">
+                        <div class="md:flex items-center gap-3">
+                          <div class="">
+                            <div class="flex justify-center items-center">
+                              <img
+                                class="w-[50%] md:w-[10rem]"
+                                src="./images/digital-products/cart-image.avif"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="">
+                            <div
+                              class="text-base text-[#222] font-[400] text-center mt-5 md:mt-0"
+                            >
+                              Cad Shopping Mall Section
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="md:min-w-[20%] md:max-w-[20%]">
+                        <div
+                          class="md:flex md:items-center md:justify-center h-full"
+                        >
+                          <div class="text-center mt-2">
+                            <span class="text-sm text-[#222] line-through"
+                              >$12.00</span
+                            >
+                            <span class="text-sm text-[#222]">$10.80</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="md:min-w-[20%] md:max-w-[20%]">
+                        <div class="md:flex items-center justify-center h-full">
+                          <div>
+                            <div>
+                              <div
+                                class="text-center mt-3 flex items-center justify-center"
+                              >
+                                <button
+                                  class="min-w-[2rem] min-h-[1.5rem] text-sm text-[#222] bg-transparent border-[1px] border-[grey]"
+                                >
+                                  -
+                                </button>
+                                <button
+                                  class="min-w-[2rem] min-h-[1.5rem] text-sm text-[#222] bg-transparent border-[1px] border-[grey]"
+                                >
+                                  5
+                                </button>
+                                <button
+                                  class="min-w-[2rem] min-h-[1.5rem] text-sm text-[#222] bg-transparent border-[1px] border-[grey]"
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="mt-2 text-center">
+                                <button class="text-[grey] text-xs">
+                                  Remove
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="hidden md:block md:min-w-[20%] md:max-w-[20%]"
+                      >
+                        <div
+                          class="md:flex md:flex-col md:items-center md:justify-center h-full"
+                        >
+                          <div class="text-center mt-2">
+                            <span class="text-sm text-[#222] line-through"
+                              >$12.00</span
+                            >
+                            <span class="text-sm text-[#222]">$10.80</span>
+                          </div>
+                          <div>
+                            <div class="text-xs text-[grey]">
+                              Bundle Discount: 10%
+                            </div>
+                          </div>
+                          <div>
+                            <div class="text-xs text-[grey]">(-$1.20)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
