@@ -360,6 +360,10 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.my-5rem {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 @media (min-width: 768px) {
   .title-1,
   .title-2 {
@@ -442,5 +446,8 @@
   }
   .lg-my-5rem {
     margin: 5rem 0rem;
+  }
+  .lg-mt-9rem {
+    margin-top: 9rem;
   }
 }
