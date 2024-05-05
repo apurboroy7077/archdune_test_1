@@ -4,10 +4,9 @@
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 85%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  pointer-events: none;
+
   transition: all 0.5s;
 }
 
@@ -19,6 +18,9 @@
   outline: none;
   border: 1px solid black;
 }
+.view-more-button:hover {
+  box-shadow: 2px 2px 5px black;
+}
 .banner-image-global {
   transition: all 0.5s;
 }
@@ -28,7 +30,7 @@
 .banner-image-div:hover {
   .banner-image-global {
     /* opacity: 0.5; */
-    filter: brightness(0.6);
+    /* filter: brightness(0.6); */
   }
 
   .view-more-button-div {
