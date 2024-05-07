@@ -4,7 +4,7 @@ const imageSrcForSmallScreen = `./images/banners/book-banner-3.png`;
 const imageSrcForLargeScreen = `./images/banners/book-banner.jpg`;
 const setImage = () => {
   if (window.innerWidth < 768) {
-    bannerImageElement.src = imageSrcForSmallScreen;
+    bannerImageElement.src = imageSrcForLargeScreen;
   } else {
     bannerImageElement.src = imageSrcForLargeScreen;
   }

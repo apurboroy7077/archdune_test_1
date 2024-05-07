@@ -1,18 +1,19 @@
 .banner-image-div {
 }
+.banner-image-div-main {
+}
 .view-more-button-div {
   text-align: center;
   position: absolute;
-  left: 50%;
-  top: 85%;
-  transform: translate(-50%, -50%);
-
+  left: 13.5%;
+  top: 73%;
   transition: all 0.5s;
 }
 
 .view-more-button {
+  font-size: 0.5rem;
   background-color: #ffce55;
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 0.7rem;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
@@ -39,6 +40,10 @@
   }
 }
 @media (min-width: 768px) {
+  .view-more-button-div {
+    left: 13.5%;
+    top: 75%;
+  }
   .view-more-button {
     font-size: 1.2rem;
     padding: 0.5rem 3rem;
