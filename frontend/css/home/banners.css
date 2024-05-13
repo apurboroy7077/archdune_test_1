@@ -24,7 +24,7 @@
   border-radius: 2px;
   cursor: pointer;
   outline: none;
-  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border: 0.5px solid rgba(0, 0, 0, 0.35);
 }
 /* .view-more-button {
   font-size: 0.5rem;
@@ -35,6 +35,7 @@
   outline: none;
   border: 1px solid black;
 } */
+/*  */
 .view-more-button:hover {
   box-shadow: 2px 2px 5px black;
 }
