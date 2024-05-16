@@ -8,14 +8,11 @@ if (toolbar && closeButton && toolbar.contains(closeButton)) {
   closeButton.setAttribute("type", "button");
   closeButton.setAttribute("aria-label", "Close gallery");
   closeButton.setAttribute("id", "lg-close-1");
-  closeButton.classList.add(
-    "lg-close",
-    "lg-icon",
-    "absolute",
-    "right-0px",
-    "top-40px",
-    "pointer-events-none"
-  );
+  closeButton.classList.add("lg-close", "lg-icon");
+  closeButton.style.right = "0px";
+  closeButton.style.position = "absolute";
+  closeButton.style.top = "40px";
+  closeButton.style.pointerEvents = "none";
 
   toolbar.appendChild(closeButton);
 }
