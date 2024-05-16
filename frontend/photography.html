@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./css/layout/layout.css" />
     <link rel="stylesheet" href="./css/home/footer.css" />
     <link rel="stylesheet" href="./css/photography/photography.css" />
+    <link rel="stylesheet" href="./css/utils/tailwind.css" />
     <!-- <link rel="stylesheet" href="./css/photography/lightboxModule.css" /> -->
 
     <link
@@ -75,6 +76,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-comments.min.css"
     />
+    <script
+      type="module"
+      src="./script/photography/photography.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./script/lightgallery/lightGalleryFinal.js"
+      defer
+    ></script>
+    <script src="./script/lightgallery/showCloseIcon.js" defer></script>
   </head>
 
   <body>
@@ -208,23 +220,39 @@
       <div class="photography-gallery">
         <div class="wro">
           <div class="photography-button-filter">
-            <button class="active-btn" data-name="all">
+            <button
+              class="active-btn photography-filtering-button"
+              data-name="all"
+            >
               <img
                 src="./images/photography_page/all-gallery.jpg"
                 class="gallery-img-306"
               />
               <span> All </span>
             </button>
-            <button data-name="Md_Hashinur_Reza">
+            <button
+              class="photography-filtering-button"
+              data-name="Md Hashinur Reza"
+            >
               <img
                 src="./images/photography_page/Md_Hashinur_Reza/Md Hashinur Reza.jpg"
                 class="gallery-img-306"
               />
               <span>Md Hashinur Reza</span>
             </button>
+            <button
+              class="photography-filtering-button"
+              data-name="Shoumique Hasan"
+            >
+              <img
+                src="./images/dummy-images/assassins-creed-face.jpg"
+                class="gallery-img-306"
+              />
+              <span>Shoumique Hasan</span>
+            </button>
           </div>
           <section class="gallery">
-            <ul class="images" id="gallery">
+            <ul class="images images-list-of-photography" id="gallery">
               <a
                 class="card"
                 data-lg-size="1600-1067"
@@ -577,6 +605,7 @@
               </a>
             </ul>
           </section>
+          <div class="font-bold">Apurbo Roy</div>
         </div>
       </div>
     </main>
@@ -715,36 +744,7 @@
 
     <script src="./script.js"></script>
     <script src="./script/home/nave.js"></script>
-    <script src="./script/hotography/fotography.js"></script>
+    <script src="./script/hotography/fotography.js" type="module"></script>
     <!-- <script src="./script/hotography/lightbox-plus-jquery.js"></script> -->
-    <script src="js/photogrsphy/lightgallery.min.js"></script>
-    <script src="js/photogrsphy/lg-autoplay.min.js"></script>
-    <script src="js/photogrsphy/lg-fullscreen.min.js"></script>
-    <script src="js/photogrsphy/lg-rotate.min.js"></script>
-    <script src="js/photogrsphy/lg-share.min.js"></script>
-    <script src="js/photogrsphy/lg-thumbnail.min.js"></script>
-    <script src="js/photogrsphy/lg-zoom.min.js"></script>
-    <script src="js/photogrsphy/lg-pager.min.js"></script>
-    <script src="js/photogrsphy/lg-comment.min.js"></script>
-    <script src="js/photogrsphy/lg-relative-caption.min.js"></script>
-
-    <script>
-      const gallery = document.getElementById("gallery");
-      lightGallery(gallery, {
-        controls: true,
-        counter: true,
-        download: true,
-        plugins: [
-          lgAutoplay,
-          lgRotate,
-          lgZoom,
-          lgShare,
-          lgFullscreen,
-          lgThumbnail,
-          lgComment,
-          lgRelativeCaption,
-        ],
-      });
-    </script>
   </body>
 </html>
