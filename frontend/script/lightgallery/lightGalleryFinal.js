@@ -1,13 +1,43 @@
-import { lightGalleryBridge } from "../../js/photogrsphy/lightgallery.min.js";
-import { autoplaybridge } from "../../js/photogrsphy/lg-autoplay.min.js";
-import { commentBridge } from "../../js/photogrsphy/lg-comment.min.js";
-import { fullScreenBridge } from "../../js/photogrsphy/lg-fullscreen.min.js";
-import { pagerBridge } from "../../js/photogrsphy/lg-pager.min.js";
-import { relativeCaptionBridge } from "../../js/photogrsphy/lg-relative-caption.min.js";
-import { rotateBridge } from "../../js/photogrsphy/lg-rotate.min.js";
-import { shareBridge } from "../../js/photogrsphy/lg-share.min.js";
-import { thumbnailBridge } from "../../js/photogrsphy/lg-thumbnail.min.js";
-import { zoomBridge } from "../../js/photogrsphy/lg-zoom.min.js";
+import {
+  lightGalleryBridge,
+  lightGalleryMinFunction,
+} from "../../js/photogrsphy/lightgallery.min.js";
+import {
+  autoPlayFunction,
+  autoplaybridge,
+} from "../../js/photogrsphy/lg-autoplay.min.js";
+import {
+  commentBridge,
+  commentFunctionLightGallery,
+} from "../../js/photogrsphy/lg-comment.min.js";
+import {
+  fullScreenBridge,
+  fullScreenFunctionLightGallery,
+} from "../../js/photogrsphy/lg-fullscreen.min.js";
+import {
+  pagerBridge,
+  pagerMinFunctionLightGallery,
+} from "../../js/photogrsphy/lg-pager.min.js";
+import {
+  relativeCaptionBridge,
+  relativeCaptionBridgeFunctionLightGallery,
+} from "../../js/photogrsphy/lg-relative-caption.min.js";
+import {
+  lgRotateFunctionLightGallery,
+  rotateBridge,
+} from "../../js/photogrsphy/lg-rotate.min.js";
+import {
+  shareBridge,
+  shareBridgeFunctionLightGallery,
+} from "../../js/photogrsphy/lg-share.min.js";
+import {
+  thumbnailBridge,
+  thumbnailFunctionLightgallery,
+} from "../../js/photogrsphy/lg-thumbnail.min.js";
+import {
+  zoomBridge,
+  zoomFunctionLightgallery,
+} from "../../js/photogrsphy/lg-zoom.min.js";
 
 lightGalleryBridge;
 autoplaybridge;
@@ -19,8 +49,8 @@ zoomBridge;
 pagerBridge;
 commentBridge;
 relativeCaptionBridge;
+const gallery = document.getElementById("gallery");
 const runLightGallery = () => {
-  const gallery = document.getElementById("gallery");
   lightGallery(gallery, {
     controls: true,
     counter: true,
