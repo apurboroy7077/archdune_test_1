@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/frontend/css/utils/tailwind.css" />
+    <script
+      type="module"
+      src="/frontend/admin-panel/script/project-details-page/adminProjectDetailsPageScript.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="bg-gray-100 py-10">
+      <div
+        class="max-w-[90%] md:max-w-[70%] lg:max-w-[60%] mx-auto bg-white p-6 rounded-lg shadow-lg"
+      >
+        <h1 class="text-2xl font-bold mb-6">Edit Project</h1>
+        <form class="edit-project-form-selector">
+          <div class="form-group mb-4">
+            <label for="projectName" class="block text-gray-700"
+              >Visibility Status</label
+            >
+            <div class="mt-2">
+              <input
+                type="radio"
+                value="VISIBLE"
+                name="visibilityStatus"
+                checked
+              />
+              <span>Visible</span>
+            </div>
+            <div>
+              <input type="radio" value="INVISIBLE" name="visibilityStatus" />
+              <span>Hidden</span>
+            </div>
+          </div>
+          <div class="form-group mb-4">
+            <label for="projectName" class="block text-gray-700"
+              >Project Name</label
+            >
+            <input
+              type="text"
+              name="projectName"
+              value="Not Loaded Yet"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="projectImageSrc" class="block text-gray-700"
+              >Project Image</label
+            >
+            <input
+              type="text"
+              name="projectImageSrc"
+              value="/frontend/images/project_page_img/DiptenuSaha/01_cluster view_cover photo.jpg"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+            <img
+              src="/frontend/images/project_page_img/DiptenuSaha/01_cluster view_cover photo.jpg"
+              alt="Project Image"
+              class="mt-4"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="category" class="block text-gray-700">Category</label>
+            <input
+              type="text"
+              id="category"
+              value="Architecture | Educational | Project | Housing"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="projectUploadDate" class="block text-gray-700"
+              >Project Upload Date</label
+            >
+            <input
+              type="text"
+              id="projectUploadDate"
+              value="07 April, 2024"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="totalViews" class="block text-gray-700"
+              >Total Views</label
+            >
+            <input
+              type="number"
+              id="totalViews"
+              value="180"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="studentName" class="block text-gray-700"
+              >Student Name</label
+            >
+            <input
+              type="text"
+              id="studentName"
+              value="Diptenu Saha"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="projectCreationYear" class="block text-gray-700"
+              >Project Creation Year</label
+            >
+            <input
+              type="number"
+              id="projectCreationYear"
+              value="2023"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="studioName" class="block text-gray-700"
+              >Studio Name</label
+            >
+            <input
+              type="text"
+              id="studioName"
+              value="X (Thesis)"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="universityName" class="block text-gray-700"
+              >University Name</label
+            >
+            <input
+              type="text"
+              id="universityName"
+              value="Pabna University of Science and Technology (PUST)"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="projectDescription" class="block text-gray-700"
+              >Project Description</label
+            >
+            <textarea
+              id="projectDescription"
+              rows="4"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            >
+Located in North Salimpur union, Chattogram, Delepara is a fisherman community village. Government proposed a housing project for the amelioration of the fisherman community of Delepara.</textarea
+            >
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="studioTeachers" class="block text-gray-700"
+              >Studio Teachers</label
+            >
+            <input
+              type="text"
+              id="studioTeachers"
+              value="Sonjit Kumar Nath"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="typology" class="block text-gray-700">Typology</label>
+            <input
+              type="text"
+              id="typology"
+              value="Housing"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="height" class="block text-gray-700">Height</label>
+            <input
+              type="text"
+              id="height"
+              value="Single Storey 15 ft | Double Storey 25 ft"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="landArea" class="block text-gray-700">Land Area</label>
+            <input
+              type="text"
+              id="landArea"
+              value="13.50 acre"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="buildArea" class="block text-gray-700"
+              >Build Area</label
+            >
+            <input
+              type="text"
+              id="buildArea"
+              value="1,96,020 sqft"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="basement" class="block text-gray-700">Basement</label>
+            <input
+              type="text"
+              id="basement"
+              value="None"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="projectLocation" class="block text-gray-700"
+              >Project Location</label
+            >
+            <input
+              type="text"
+              id="projectLocation"
+              value="Delepara, North Salimpur, Chattogram"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="projectLocationImageSrc" class="block text-gray-700"
+              >Project Location Image</label
+            >
+            <input
+              type="text"
+              id="projectLocationImageSrc"
+              value="/example.jpg"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+            <img src="/example.jpg" alt="Project Location" class="mt-4" />
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="videoSrc" class="block text-gray-700"
+              >Video Source</label
+            >
+            <input
+              type="text"
+              id="videoSrc"
+              value="https://www.youtube.com/embed/iKCJ1M5YiVQ?si=ogK2X5_DwkKm8NEc"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          <h2 class="text-xl font-bold mb-4 mt-8">Additional Fields</h2>
+          <div class="additional-fields-div-selector">
+            <div class="additional-field">
+              <div data-field-info="field-name">
+                <div class="text-gray-700">Project Name</div>
+
+                <input
+                  type="text"
+                  value="Location"
+                  class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                />
+              </div>
+              <div data-field-info="field-description" class="form-group mt-2">
+                <label for="locationDescription" class="block text-gray-700"
+                  >Description</label
+                >
+                <textarea
+                  id="locationDescription"
+                  rows="4"
+                  class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                >
+Located in North Salimpur union, Chattogram, Delepara is a fisherman community village. Government proposed a housing project for the amelioration of the fisherman community of Delepara. While the government’s provision of 2,200 sqft area to each family with residential structures and facilities, the families are struggling to live properly because of unplanned settlement and lack of enough space for their ritual and daily activities. The proposed design concept aims to improve their quality of life by creating co-living spaces that foster social interaction and giving them enough space and facilities for creating belongingness in their living space and society.</textarea
+                >
+              </div>
+              <div data-field-info="field-images" class="form-group mt-2">
+                <div data-field-info="field-single-image">
+                  <label for="locationImage" class="block text-gray-700"
+                    >Image</label
+                  >
+
+                  <img
+                    src="/frontend/images/project_page_img/DiptenuSaha/02_location%20map.jpg"
+                    alt="Location Map"
+                    class="mt-4"
+                  />
+                  <label class="block text-gray-700 mt-2">Image Src</label>
+                  <input
+                    type="text"
+                    id="locationImage"
+                    value="/frontend/images/project_page_img/DiptenuSaha/02_location%20map.jpg"
+                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  />
+                  <label class="block text-gray-700 mt-2">Caption</label>
+
+                  <input
+                    type="text"
+                    placeholder="caption"
+                    value="Diptenu Saha PUST @"
+                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  />
+                </div>
+                <div data-field-info="field-single-image">
+                  <label for="locationImage" class="block text-gray-700"
+                    >Image</label
+                  >
+
+                  <img
+                    src="/frontend/images/project_page_img/DiptenuSaha/02_location%20map.jpg"
+                    alt="Location Map"
+                    class="mt-4"
+                  />
+                  <label class="block text-gray-700 mt-2">Image Src</label>
+                  <input
+                    type="text"
+                    id="locationImage"
+                    value="/frontend/images/project_page_img/DiptenuSaha/02_location%20map.jpg"
+                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  />
+                  <label class="block text-gray-700 mt-2">Caption</label>
+
+                  <input
+                    type="text"
+                    placeholder="caption"
+                    value="Diptenu Saha PUST @"
+                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Save button -->
+          <div class="mt-8 submit-button-div-selector">
+            <button
+              type="submit"
+              class="w-full py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600"
+            >
+              Save Changes
+            </button>
+            <button
+              class="w-full py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600"
+            >
+              <span>Saving</span>
+              <img
+                src="/frontend/images/icons/spinner-solid-white.svg"
+                alt=""
+                class="w-[1.7rem] animate-spin inline ml-1"
+              />
+            </button>
+            <button
+              class="w-full py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600"
+            >
+              <span>Saved</span>
+              <img
+                src="/frontend/images/icons/check-solid-white.svg"
+                alt=""
+                class="w-[1.7rem] animate-ping inline-block ml-5"
+              />
+            </button>
+            <button
+              type="submit"
+              class="w-full py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600"
+            >
+              <span>Failed, Try Again</span>
+              <img
+                src="/frontend/images/icons/warning-red.svg"
+                alt=""
+                class="w-[1.7rem] animate-pulse inline-block ml-3"
+              />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
