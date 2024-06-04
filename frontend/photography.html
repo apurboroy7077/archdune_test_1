@@ -86,7 +86,11 @@
       src="./script/lightgallery/lightGalleryFinal.js"
       defer
     ></script>
-    <script src="./script/lightgallery/showCloseIcon.js" defer></script>
+    <script
+      src="./script/lightgallery/showCloseIcon.js"
+      type="module"
+      defer
+    ></script>
   </head>
 
   <body>
@@ -217,9 +221,31 @@
           </div>
         </div>
       </div>
-      <div class="photography-gallery">
+      <div class="photography-gallery mt-5">
         <div class="wro">
-          <div class="photography-button-filter">
+          <div>
+            <div class="mx-2">
+              <input
+                type="text"
+                placeholder="Search image or author"
+                class="border-[black] border-[1px] py-2 px-3 outline-none rounded search-input-photography-js-selector"
+              />
+            </div>
+          </div>
+          <div>
+            <div
+              class="h-[10rem] items-center justify-center my-[5rem] mx-[3rem] hidden loading-div-js-selector"
+            >
+              <button
+                class="border-[1px] px-3 py-1 rounded opacity-[0.8] animate-ping"
+              >
+                Loading
+              </button>
+            </div>
+          </div>
+          <div
+            class="photography-button-filter flex flex-wrap my-5 mx-2 photography-filtering-button-div-js-selector"
+          >
             <button
               class="active-btn photography-filtering-button"
               data-name="all"
@@ -251,8 +277,8 @@
               <span>Shoumique Hasan</span>
             </button>
           </div>
-          <section class="gallery">
-            <ul class="images images-list-of-photography" id="gallery">
+          <section class="gallery gallery-div-js-selector">
+            <ul class="images images-list-of-photography mx-2" id="gallery">
               <a
                 class="card"
                 data-lg-size="1600-1067"
@@ -605,7 +631,22 @@
               </a>
             </ul>
           </section>
-          <div class="font-bold">Apurbo Roy</div>
+          <div>
+            <div class="mx-3 my-3 flex gap-2">
+              <button
+                data-pagination-serial="1"
+                class="border-[1px] border-[rgba(0,0,0,0.3)] text-[rgba(0,0,0,0.7)] w-[2rem] rounded active:scale-[0.95] pagination-button-photography-1"
+              >
+                1
+              </button>
+              <button
+                data-pagination-serial="2"
+                class="border-[1px] border-[rgba(0,0,0,0.3)] text-[rgba(0,0,0,0.7)] w-[2rem] rounded active:scale-[0.95] pagination-button-photography-1"
+              >
+                2
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>

@@ -104,13 +104,12 @@
   align-items: center;
 }
 .images {
-  max-width: 95%;
   gap: 15px;
   columns: 3 340px;
   margin-bottom: 15px;
 }
 .images .card {
-  display: flex; 
+  display: flex;
   margin-bottom: 15px;
   list-style-type: none;
   position: relative;
@@ -160,8 +159,8 @@
   color: #cccccc;
 }
 
-.cardHoverName{
-	color: #cccccc; 
+.cardHoverName {
+  color: #cccccc;
 }
 
 .cardHoverButtomLick button {
