@@ -2435,6 +2435,30 @@ video {
   line-height: 1rem;
 }
 
+.text-\[0\.702rem\] {
+  font-size: 0.702rem;
+}
+
+.text-\[0\.70rem\] {
+  font-size: 0.70rem;
+}
+
+.text-\[0\.7rem\] {
+  font-size: 0.7rem;
+}
+
+.text-\[7\.6rem\] {
+  font-size: 7.6rem;
+}
+
+.text-\[7\.5rem\] {
+  font-size: 7.5rem;
+}
+
+.text-\[13\.2rem\] {
+  font-size: 13.2rem;
+}
+
 .font-\[400\] {
   font-weight: 400;
 }
@@ -2608,6 +2632,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[cyan\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
