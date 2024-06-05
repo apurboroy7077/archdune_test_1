@@ -14,7 +14,7 @@ const applyProjectCardScripts = () => {
         KEYNAME_OF_OPENED_PROJECT_ID_IN_ADMIN_PANEL,
         projectId
       );
-      window.location.href = "/frontend/admin-panel/html/projectDetails.html";
+      window.location.href = "/admin-panel/html/projectDetails.html";
     });
   }
 };

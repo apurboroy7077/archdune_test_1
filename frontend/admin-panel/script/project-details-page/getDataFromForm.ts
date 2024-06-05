@@ -33,7 +33,7 @@ const extractDataFromNormalFields = (e: SubmitEvent) => {
 const extractDataFromAdditionalFields = () => {
   const additionalFieldsDiv =
     document.getElementsByClassName("additional-field");
-  let data = [];
+  let data: any = [];
   for (let i = 0; i < additionalFieldsDiv.length; i++) {
     const fieldDiv = additionalFieldsDiv[i];
     const myObjectData: any = {};
@@ -52,7 +52,7 @@ const extractDataFromAdditionalFields = () => {
         myObjectData.fieldDescription = fieldDescription;
       } else if (fieldInfo === "field-images") {
         const fieldImagesDiv = childrenDiv.children;
-        let fieldImages = [];
+        let fieldImages: any = [];
         for (let i = 0; i < fieldImagesDiv.length; i++) {
           const imageDiv = fieldImagesDiv[i];
           const imageSrcInput = imageDiv.children[3] as HTMLInputElement;

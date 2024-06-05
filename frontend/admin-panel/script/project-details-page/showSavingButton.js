@@ -5,7 +5,7 @@ const showSavingButton = () => {
 >
   <span>Saving</span>
   <img
-    src="/frontend/images/icons/spinner-solid-white.svg"
+    src="/images/icons/spinner-solid-white.svg"
     alt=""
     class="w-[1.7rem] animate-spin inline ml-1"
   />
@@ -20,7 +20,7 @@ const showSavingSuccessfulButton = () => {
   >
     <span>Saved</span>
     <img
-      src="/frontend/images/icons/check-solid-white.svg"
+      src="/images/icons/check-solid-white.svg"
       alt=""
       class="w-[1.7rem] animate-ping inline-block ml-5"
     />
@@ -35,7 +35,7 @@ const showSavingFailedButton = () => {
 >
   <span>Failed, Try Again</span>
   <img
-    src="/frontend/images/icons/warning-red.svg"
+    src="/images/icons/warning-red.svg"
     alt=""
     class="w-[1.7rem] animate-pulse inline-block ml-3"
   />
