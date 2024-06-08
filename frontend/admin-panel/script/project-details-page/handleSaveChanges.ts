@@ -22,10 +22,7 @@ const handleSaveChanges = (projectData: any) => {
   );
   const dataForServer = {
     adminToken,
-    projectData: {
-      _id: proJectId,
-      data: projectData,
-    },
+    projectData,
   };
   showSavingButton();
   ar7Fetch
