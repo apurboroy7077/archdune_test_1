@@ -41,6 +41,17 @@ const loadNormalFields = (
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
+<div class="form-group mb-4">
+<label for="location" class="block text-gray-700"
+  >Location</label
+>
+<input
+  type="text"
+  name="location"
+  value="${projectData.location}"
+  class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+/>
+</div>
 
 <div class="form-group mb-4">
   <label for="projectImageLink" class="block text-gray-700"

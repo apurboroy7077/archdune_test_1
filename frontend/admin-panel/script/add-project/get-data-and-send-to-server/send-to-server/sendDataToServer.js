@@ -5,9 +5,10 @@ import giveAdminToken from "../../../../../script/utils/custom-functions/give-ad
 import addAdditionalFieldsToFormData from "./add-additional-fields-to-formdata/addAdditionalFieldsToFormData.js";
 import { showAddingButton, showFailedButton, showSuccessButton, } from "./show-buttons/showButtons.js";
 const sendDataToServer = (data) => {
-    const { additionalFields, basement, buildArea, category, height, landArea, projectCreationYear, projectDescription, projectImage, projectImageCaption, projectName, studentName, studioName, studioTeachers, typology, universityName, videoSrc, visibilityStatus, } = data;
+    const { additionalFields, basement, buildArea, category, height, landArea, projectCreationYear, projectDescription, projectImage, projectImageCaption, projectName, studentName, studioName, studioTeachers, typology, universityName, videoSrc, visibilityStatus, location, } = data;
     const myFormData = new FormData();
     myFormData.append("basement", basement);
+    myFormData.append("location", basement);
     myFormData.append("buildArea", buildArea);
     myFormData.append("category", category);
     myFormData.append("height", height);

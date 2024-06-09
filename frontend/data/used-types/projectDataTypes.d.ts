@@ -29,5 +29,6 @@ type ProjectDataTypeOfSendingToServer1 = {
   additionalFields: AdditionalField[];
   uploadDate: string;
   totalViews: string;
+  location: string;
 };
 export type { ProjectDataTypeOfSendingToServer1 };

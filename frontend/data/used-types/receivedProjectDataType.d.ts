@@ -19,6 +19,7 @@ export type receivedProjectDataType = {
   _id: string;
   basement: string;
   buildArea: string;
+  location: string;
   category: string;
   height: string;
   landArea: string;
@@ -34,6 +35,8 @@ export type receivedProjectDataType = {
   universityName: string;
   videoSrc: string;
   visibilityStatus: string;
+  totalViews: number;
+  uploadDate: string;
   additionalFields: {
     fieldName: string;
     fieldDescription: string;

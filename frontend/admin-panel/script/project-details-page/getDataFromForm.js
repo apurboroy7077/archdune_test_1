@@ -18,6 +18,7 @@ const extractDataFromNormalFields = (e, projectData) => {
         "buildArea",
         "basement",
         "videoSrc",
+        "location",
     ];
     const dataObject = {};
     for (let i = 0; i < projectKeys.length; i++) {

@@ -34,9 +34,11 @@ const sendDataToServer = (data: ProjectDataTypeOfSendingToServer1) => {
     universityName,
     videoSrc,
     visibilityStatus,
+    location,
   } = data;
   const myFormData = new FormData();
   myFormData.append("basement", basement);
+  myFormData.append("location", basement);
   myFormData.append("buildArea", buildArea);
   myFormData.append("category", category);
   myFormData.append("height", height);

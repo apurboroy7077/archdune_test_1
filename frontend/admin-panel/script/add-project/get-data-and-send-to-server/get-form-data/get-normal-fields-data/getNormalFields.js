@@ -16,6 +16,7 @@ const projectNames = [
     "buildArea",
     "basement",
     "videoSrc",
+    "location",
 ];
 const getNormalFields = (e) => {
     const formData = new FormData(e.currentTarget);

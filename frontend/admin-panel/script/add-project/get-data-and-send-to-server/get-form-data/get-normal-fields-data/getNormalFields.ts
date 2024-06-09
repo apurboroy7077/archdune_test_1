@@ -16,11 +16,13 @@ const projectNames = [
   "buildArea",
   "basement",
   "videoSrc",
+  "location",
 ];
 
 const getNormalFields = (e: SubmitEvent) => {
   const formData = new FormData(e.currentTarget as HTMLFormElement);
   const data: any = {};
+
   for (let i = 0; i < projectNames.length; i++) {
     let fieldName = projectNames[i];
     const fieldValue = formData.get(fieldName);
