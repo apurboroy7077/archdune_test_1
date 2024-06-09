@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Add New Project</title>
     <link rel="stylesheet" href="/css/utils/tailwind.css" />
     <script
       type="module"
@@ -14,7 +14,10 @@
   <body>
     <div class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
       <div class="w-full lg:max-w-[60%]">
-        <form id="projectForm" class="bg-white shadow-lg rounded-lg p-6">
+        <form
+          id="projectForm"
+          class="bg-white shadow-lg rounded-lg p-6 add-new-project-form-selector"
+        >
           <!-- Project Overview -->
           <div class="mb-8">
             <h2 class="text-2xl font-semibold mb-6 text-blue-600">
@@ -33,15 +36,44 @@
             </div>
             <div class="mb-4">
               <label class="block text-gray-700 font-medium mb-1"
-                >Project Image Src</label
-              >
+                >Project Image
+              </label>
               <input
-                type="text"
-                name="projectName"
+                type="file"
+                name="projectImage"
+                class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
+                required
+              />
+              <input
+                type="input"
+                name="projectImageCaption"
+                placeholder="Caption"
                 class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
                 required
               />
             </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-medium mb-1"
+                >Location</label
+              >
+              <input
+                type="text"
+                name="location"
+                class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-medium mb-1"
+                >Video Source If Any</label
+              >
+              <input
+                type="url"
+                name="videoSrc"
+                class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
+              />
+            </div>
+
             <div class="mb-4">
               <label class="block text-gray-700 font-medium mb-1"
                 >Category</label
@@ -108,11 +140,11 @@
             </div>
             <div class="mb-4">
               <label class="block text-gray-700 font-medium mb-1"
-                >Upload Date</label
+                >Basement</label
               >
               <input
-                type="date"
-                name="projectUploadDate"
+                type="text"
+                name="basement"
                 class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
                 required
               />
@@ -121,23 +153,24 @@
               <label class="block text-gray-700 font-medium mb-1"
                 >Visibility Status</label
               >
-              <input
-                type="text"
-                name="visibilityStatus"
-                class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
-                required
-              />
-            </div>
-            <div class="mb-4">
-              <label class="block text-gray-700 font-medium mb-1"
-                >Total Views</label
-              >
-              <input
-                type="number"
-                name="totalViews"
-                class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
-                required
-              />
+              <div class="mt-3">
+                <input
+                  required
+                  type="radio"
+                  value="VISIBLE"
+                  name="visibilityStatus"
+                />
+                <span class="font-medium opacity-[0.7]">VISIBLE</span>
+              </div>
+              <div class="mt-2">
+                <input
+                  required
+                  type="radio"
+                  value="INVISIBLE"
+                  name="visibilityStatus"
+                />
+                <span class="font-medium opacity-[0.7]">HIDDEN</span>
+              </div>
             </div>
           </div>
 
@@ -207,60 +240,7 @@
               />
             </div>
           </div>
-          <div class="extra-fields-div">
-            <div class="extra-field-single-div">
-              <div>
-                <label class="block text-gray-700 font-medium mb-1"
-                  >Field Name</label
-                >
-                <input
-                  type="text"
-                  name=""
-                  class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
-                  required
-                />
-              </div>
-              <div class="mt-3">
-                <label class="block text-gray-700 font-medium mb-1"
-                  >Field Description</label
-                >
-                <input
-                  type="text"
-                  name=""
-                  class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
-                  required
-                />
-              </div>
-              <div class="mt-3">
-                <label class="block text-gray-700 font-medium mb-1"
-                  >Field Image</label
-                >
-                <div>
-                  <input
-                    type="file"
-                    name="image"
-                    class="mt-1 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="imageCaption"
-                    placeholder="Image Caption"
-                    class="mt-5 block w-full p-3 border rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200"
-                    required
-                  />
-                </div>
-                <div class="text-center">
-                  <button
-                    type="button"
-                    class="text-[grey] w-[60%] text-xs border-[1px] py-3 active:scale-[0.95] add-extra-field-button-selector mt-5"
-                  >
-                    Add Another Image
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="extra-fields-div"></div>
           <div class="mt-5">
             <button
               type="button"
@@ -269,13 +249,46 @@
               Add Extra Field
             </button>
           </div>
-          <div class="mt-8">
+          <div class="mt-8 submit-button-div-selector">
             <button
               type="submit"
               class="w-full py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-300"
             >
               Submit
             </button>
+            <!-- <button
+              type="button"
+              class="w-full py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-300"
+            >
+              Adding Project
+              <img
+                src="/images/icons/spinner-solid-white.svg"
+                alt=""
+                class="w-[1.7rem] inline-block ml-3 animate-spin"
+              />
+            </button>
+            <button
+              type="submit"
+              class="w-full py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-300"
+            >
+              Failed, Try Again
+              <img
+                src="/images/icons/warning-red.svg"
+                alt=""
+                class="w-[1.7rem] inline-block ml-3 animate-pulse"
+              />
+            </button>
+            <button
+              type="button"
+              class="w-full py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-300"
+            >
+              Project Added
+              <img
+                src="/images/icons/check-solid-white.svg"
+                alt=""
+                class="w-[1.7rem] inline-block ml-3 animate-bounce"
+              />
+            </button> -->
           </div>
         </form>
       </div>

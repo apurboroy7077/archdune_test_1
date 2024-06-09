@@ -22,7 +22,6 @@ const demoProjectData = [
       buildArea: "1,96,020 sqft",
       basement: "None",
       projectLocation: "Delepara, North Salimpur, Chattogram",
-      projectLocationImageSrc: "/example.jpg",
       videoSrc: "https://www.youtube.com/embed/iKCJ1M5YiVQ?si=ogK2X5_DwkKm8NEc",
       additionalFields: [
         {

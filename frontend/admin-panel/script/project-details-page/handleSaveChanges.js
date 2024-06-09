@@ -8,10 +8,7 @@ const handleSaveChanges = (projectData) => {
     const adminToken = localStorage.getItem(KEYNAME_OF_ADMIN_TOKEN_IN_LOCALSTORAGE);
     const dataForServer = {
         adminToken,
-        projectData: {
-            _id: proJectId,
-            data: projectData,
-        },
+        projectData,
     };
     showSavingButton();
     ar7Fetch

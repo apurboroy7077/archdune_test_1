@@ -1,14 +1,17 @@
+import { receivedProjectDataType } from "../../../data/used-types/receivedProjectDataType";
 import { demoProjectDataType } from "../../../data/variables/demoProjectData";
 
-const extractDataFromNormalFields = (e: SubmitEvent) => {
+const extractDataFromNormalFields = (
+  e: SubmitEvent,
+  projectData: receivedProjectDataType
+) => {
   const formData = new FormData(e.currentTarget as any);
   const projectKeys = [
     "visibilityStatus",
     "projectName",
-    "projectImageSrc",
+    "projectImageLink",
+    "projectImageCaption",
     "category",
-    "projectUploadDate",
-    "totalViews",
     "studentName",
     "projectCreationYear",
     "studioName",
@@ -21,6 +24,7 @@ const extractDataFromNormalFields = (e: SubmitEvent) => {
     "buildArea",
     "basement",
     "videoSrc",
+    "location",
   ];
   const dataObject: any = {};
   for (let i = 0; i < projectKeys.length; i++) {
@@ -28,6 +32,12 @@ const extractDataFromNormalFields = (e: SubmitEvent) => {
     const data = formData.get(key);
     dataObject[key] = data;
   }
+
+  const { _id, projectImageCaption, __v } = projectData;
+
+  dataObject._id = _id;
+  dataObject.projectImageCaption = projectImageCaption;
+  dataObject.__v = __v;
   return dataObject;
 };
 const extractDataFromAdditionalFields = () => {
@@ -73,10 +83,13 @@ const extractDataFromAdditionalFields = () => {
   return data;
 };
 
-const getDataFromForm = (e: SubmitEvent) => {
+const getDataFromForm = (
+  e: SubmitEvent,
+  receivedProjectData: receivedProjectDataType
+) => {
   let data: any;
   e.preventDefault();
-  const normalFieldsData = extractDataFromNormalFields(e);
+  const normalFieldsData = extractDataFromNormalFields(e, receivedProjectData);
   const additionalFieldsData = extractDataFromAdditionalFields();
   normalFieldsData.additionalFields = additionalFieldsData;
   data = normalFieldsData;

@@ -1,13 +1,15 @@
+import { receivedProjectDataType } from "../../../data/used-types/receivedProjectDataType.js";
 import { demoProjectDataType } from "../../../data/variables/demoProjectData.js";
 
 type loadFormOfProjectDetailsType = (
-  projectData: demoProjectDataType[number]
+  projectData: receivedProjectDataType
 ) => void;
 
 const loadNormalFields = (
-  projectData: demoProjectDataType[number],
+  projectData: receivedProjectDataType,
   myForm: HTMLFormElement
 ) => {
+  const projectData_ = projectData;
   const htmlCode = `
   
   
@@ -17,13 +19,13 @@ const loadNormalFields = (
   >
   <div class="mt-2">
     <input type="radio" value="VISIBLE" name="visibilityStatus" ${
-      projectData.data.visibilityStatus === "VISIBLE" ? "checked" : ""
+      projectData.visibilityStatus === "VISIBLE" ? "checked" : ""
     }/>
     <span>Visible</span>
   </div>
   <div>
     <input type="radio" value="INVISIBLE" name="visibilityStatus" ${
-      projectData.data.visibilityStatus === "INVISIBLE" ? "checked" : ""
+      projectData.visibilityStatus === "INVISIBLE" ? "checked" : ""
     }/>
     <span>Hidden</span>
   </div>
@@ -35,26 +37,44 @@ const loadNormalFields = (
   <input
     type="text"
     name="projectName"
-    value="${projectData.data.projectName}"
+    value="${projectData.projectName}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
+<div class="form-group mb-4">
+<label for="location" class="block text-gray-700"
+  >Location</label
+>
+<input
+  type="text"
+  name="location"
+  value="${projectData.location}"
+  class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+/>
+</div>
 
 <div class="form-group mb-4">
-  <label for="projectImageSrc" class="block text-gray-700"
+  <label for="projectImageLink" class="block text-gray-700"
     >Project Image</label
   >
   
   <img
-    src="${projectData.data.projectImageSrc}"
+    src="${projectData.projectImageLink}"
     alt="Project Image"
     class="mt-4"
   />
   <input
   type="text"
-  name="projectImageSrc"
-  value="${projectData.data.projectImageSrc}"
+  name="projectImageLink"
+  value="${projectData.projectImageLink}"
   class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+/>
+<input
+type="text"
+name="projectImageCaption"
+value="${projectData.projectImageCaption}"
+placeholder="Caption"
+class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
 />
 </div>
 
@@ -63,34 +83,14 @@ const loadNormalFields = (
   <input
     type="text"
     name="category"
-    value="${projectData.data.category}"
+    value="${projectData.category}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
 
-<div class="form-group mb-4">
-  <label for="projectUploadDate" class="block text-gray-700"
-    >Project Upload Date</label
-  >
-  <input
-    type="text"
-    name="projectUploadDate"
-    value="${projectData.data.projectUploadDate}"
-    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-  />
-</div>
 
-<div class="form-group mb-4">
-  <label for="totalViews" class="block text-gray-700"
-    >Total Views</label
-  >
-  <input
-    type="number"
-    name="totalViews"
-    value="${projectData.data.totalViews}"
-    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-  />
-</div>
+
+
 
 <div class="form-group mb-4">
   <label for="studentName" class="block text-gray-700"
@@ -99,7 +99,7 @@ const loadNormalFields = (
   <input
     type="text"
     name="studentName"
-    value="${projectData.data.studentName}"
+    value="${projectData.studentName}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -111,7 +111,7 @@ const loadNormalFields = (
   <input
     type="number"
     name="projectCreationYear"
-    value="${projectData.data.projectCreationYear}"
+    value="${projectData.projectCreationYear}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -123,7 +123,7 @@ const loadNormalFields = (
   <input
     type="text"
     name="studioName"
-    value="${projectData.data.studioName}"
+    value="${projectData.studioName}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -135,7 +135,7 @@ const loadNormalFields = (
   <input
     type="text"
     name="universityName"
-    value="${projectData.data.universityName}"
+    value="${projectData.universityName}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -150,7 +150,7 @@ const loadNormalFields = (
 
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   >
-${projectData.data.projectDescription}</textarea
+${projectData.projectDescription}</textarea
  >
 </div>
 
@@ -161,7 +161,7 @@ ${projectData.data.projectDescription}</textarea
   <input
     type="text"
     name="studioTeachers"
-    value="${projectData.data.studioTeachers}"
+    value="${projectData.studioTeachers}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -171,7 +171,7 @@ ${projectData.data.projectDescription}</textarea
   <input
     type="text"
     name="typology"
-    value="${projectData.data.typology}"
+    value="${projectData.typology}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -181,7 +181,7 @@ ${projectData.data.projectDescription}</textarea
   <input
     type="text"
     name="height"
-    value="${projectData.data.height}"
+    value="${projectData.height}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -191,7 +191,7 @@ ${projectData.data.projectDescription}</textarea
   <input
     type="text"
     name="landArea"
-    value="${projectData.data.landArea}"
+    value="${projectData.landArea}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -203,7 +203,7 @@ ${projectData.data.projectDescription}</textarea
   <input
     type="text"
     name="buildArea"
-    value="${projectData.data.buildArea}"
+    value="${projectData.buildArea}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -213,7 +213,7 @@ ${projectData.data.projectDescription}</textarea
   <input
     type="text"
     name="basement"
-    value="${projectData.data.basement}"
+    value="${projectData.basement}"
     class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
   />
 </div>
@@ -225,7 +225,7 @@ ${projectData.data.projectDescription}</textarea
             <input
               type="text"
               name="videoSrc"
-              value="${projectData.data.videoSrc}"
+              value="${projectData.videoSrc}"
               class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
@@ -238,12 +238,12 @@ ${projectData.data.projectDescription}</textarea
   myForm.innerHTML = htmlCode;
 };
 const loadAdditionalFields = (
-  projectData: demoProjectDataType[number],
+  projectData: receivedProjectDataType,
   myForm: HTMLFormElement
 ) => {
   const additionalFieldsCode = `
   <div class="additional-fields-div-selector">
-${projectData.data.additionalFields
+${projectData.additionalFields
   .map((data) => {
     return `
     

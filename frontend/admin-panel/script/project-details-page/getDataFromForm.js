@@ -1,12 +1,11 @@
-const extractDataFromNormalFields = (e) => {
+const extractDataFromNormalFields = (e, projectData) => {
     const formData = new FormData(e.currentTarget);
     const projectKeys = [
         "visibilityStatus",
         "projectName",
-        "projectImageSrc",
+        "projectImageLink",
+        "projectImageCaption",
         "category",
-        "projectUploadDate",
-        "totalViews",
         "studentName",
         "projectCreationYear",
         "studioName",
@@ -19,6 +18,7 @@ const extractDataFromNormalFields = (e) => {
         "buildArea",
         "basement",
         "videoSrc",
+        "location",
     ];
     const dataObject = {};
     for (let i = 0; i < projectKeys.length; i++) {
@@ -26,6 +26,10 @@ const extractDataFromNormalFields = (e) => {
         const data = formData.get(key);
         dataObject[key] = data;
     }
+    const { _id, projectImageCaption, __v } = projectData;
+    dataObject._id = _id;
+    dataObject.projectImageCaption = projectImageCaption;
+    dataObject.__v = __v;
     return dataObject;
 };
 const extractDataFromAdditionalFields = () => {
@@ -69,10 +73,10 @@ const extractDataFromAdditionalFields = () => {
     }
     return data;
 };
-const getDataFromForm = (e) => {
+const getDataFromForm = (e, receivedProjectData) => {
     let data;
     e.preventDefault();
-    const normalFieldsData = extractDataFromNormalFields(e);
+    const normalFieldsData = extractDataFromNormalFields(e, receivedProjectData);
     const additionalFieldsData = extractDataFromAdditionalFields();
     normalFieldsData.additionalFields = additionalFieldsData;
     data = normalFieldsData;
