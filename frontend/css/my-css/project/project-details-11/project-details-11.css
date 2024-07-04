@@ -1,0 +1,14 @@
+.single-image-div-sabertooth {
+  margin-top: 2rem;
+}
+.each-section-duck {
+  margin-top: 3rem;
+}
+.reference-list-project11 {
+  padding-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .single-image-div-sabertooth {
+    margin-top: 5rem;
+  }
+}
