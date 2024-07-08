@@ -1,9 +1,9 @@
 var swiper = new Swiper(".swiper-infinite-loop-for-homepage-projects", {
   slidesPerView: 1,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
   loop: true,
   spaceBetween: 10,
   //freeMode: true,
