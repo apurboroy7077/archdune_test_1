@@ -1,0 +1,25 @@
+.competition-section-div-1 {
+  padding: 2rem 1rem;
+  background-color: #e3e2d6;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.competition-section-div-1-1 img {
+  max-width: 100%;
+  border: 5px solid gray;
+}
+.competition-section-div-1-2-1-1 {
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+}
+.competition-section-div-1-2-1-2 {
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.5rem;
+}
+.competition-section-div-1-2-1-3 {
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+}

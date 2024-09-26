@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Aktiv-Grotesk-W01-Medium;
+  src: url("./../fonts/Aktiv-Grotesk-W01-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: Aktiv-Grotesk-W06-Regular;
+  src: url("./../fonts/Aktiv-Grotesk-W06-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Thin;
+  src: url("./../fonts/Poppins-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("./../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("./../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Aktiv-Grotesk-W06-Light;
+  src: url("./../fonts/Aktiv-Grotesk-W06-Light.ttf") format("truetype");
+}
+body {
+  font-family: Aktiv-Grotesk-W01-Medium;
+}
+
+.aktiv-grotesk-w01-medium {
+  font-family: Aktiv-Grotesk-W01-Medium;
+}
+.aktiv-grotesk-w06-regular {
+  font-family: Aktiv-Grotesk-W06-Regular;
+}
+.aktiv-grotesk-w06-light {
+  font-family: Aktiv-Grotesk-W06-Light;
+}
+.poppins-thin {
+  font-family: Poppins-Thin;
+}
+.helvetica {
+  font-family: Helvetica;
+}
+.poppins-regular {
+  font-family: Poppins-Regular;
+}
+.poppins-bold {
+  font-family: Poppins-Bold;
+}
