@@ -1,12 +1,23 @@
-import { menuButtonOfNavbarInSmallScreen, menuCloseButtonOfNavbarInSmallScreen, menulistOfNavbarInSmallScreen, } from "../../../dom-elements/domElements.js";
+import {
+  menuButtonOfNavbarInSmallScreen,
+  menuCloseButtonOfNavbarInSmallScreen,
+  menulistOfNavbarInSmallScreen,
+} from "../../../dom-elements/domElements.js";
+
 const openNavbarMenuListInSmallScreenFunctionality = () => {
-    menuButtonOfNavbarInSmallScreen.addEventListener("click", () => {
-        menulistOfNavbarInSmallScreen.style.borderBottom = "1px solid";
-        menulistOfNavbarInSmallScreen.style.height =
-            menulistOfNavbarInSmallScreen.scrollHeight + "px";
-        menuButtonOfNavbarInSmallScreen.style.display = "none";
-        menuCloseButtonOfNavbarInSmallScreen.style.display = "inline-block";
+  const menuButton = menuButtonOfNavbarInSmallScreen();
+  const menuCloseButton = menuCloseButtonOfNavbarInSmallScreen();
+  const menuList = menulistOfNavbarInSmallScreen();
+
+  if (menuButton && menuCloseButton && menuList) {
+    menuButton.addEventListener("click", () => {
+      menuList.style.borderBottom = "1px solid";
+      menuList.style.height = menuList.scrollHeight + "px";
+      menuButton.style.display = "none";
+      menuCloseButton.style.display = "inline-block";
     });
+  }
 };
+
 export default openNavbarMenuListInSmallScreenFunctionality;
 //# sourceMappingURL=openNavbarMenuListInSmallScreenFunctionality.js.map

@@ -3,10 +3,11 @@ import linkFunctionOfBigScreenNavbar from "../link-function-of-big-screen-navbar
 import openNavbarMenuListInSmallScreenFunctionality from "../open-navbar-menu-list-in-small-screen/openNavbarMenuListInSmallScreenFunctionality.js";
 import specialLinkFunction from "../special-link-function/specialLinkFunction.js";
 const navbarScripts = () => {
-    openNavbarMenuListInSmallScreenFunctionality();
-    closeMenubarInSmallScreenFunctionality();
-    linkFunctionOfBigScreenNavbar();
-    specialLinkFunction();
+  openNavbarMenuListInSmallScreenFunctionality();
+
+  closeMenubarInSmallScreenFunctionality();
+  linkFunctionOfBigScreenNavbar();
+  specialLinkFunction();
 };
 export default navbarScripts;
 //# sourceMappingURL=navbarScripts.js.map
